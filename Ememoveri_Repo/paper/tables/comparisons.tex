@@ -1,0 +1,23 @@
+\begin{tabular}{llcccc}
+\toprule
+A & B & Metric & $\Delta$ (A$-$B) [95\% CI] & A-only / B-only & $p_{\text{Holm}}$ \\
+\midrule
+EmemoVeri (default weights) & Plain RAG (all repos) & Hit@1 & +0.073 [+0.036, +0.109] & 132 / 76 & 0.0008 \\
+EmemoVeri (default weights) & Plain RAG (all repos) & Hit@5 & +0.133 [+0.090, +0.176] & 203 / 101 & $<$0.0001 \\
+\midrule
+EmemoVeri (default weights) & Naive memory (local) & Hit@1 & +0.049 [+0.013, +0.086] & 121 / 83 & 0.0282 \\
+EmemoVeri (default weights) & Naive memory (local) & Hit@5 & +0.072 [+0.029, +0.115] & 171 / 116 & 0.0070 \\
+\midrule
+EmemoVeri (default weights) & Snapshot RAG & Hit@1 & +0.029 [$-$0.009, +0.065] & 113 / 91 & 0.1413 \\
+EmemoVeri (default weights) & Snapshot RAG & Hit@5 & +0.043 [+0.000, +0.086] & 157 / 124 & 0.1121 \\
+\midrule
+EmemoVeri (dev-tuned) & Snapshot RAG & Hit@1 & +0.077 [+0.052, +0.103] & 82 / 23 & $<$0.0001 \\
+EmemoVeri (dev-tuned) & Snapshot RAG & Hit@5 & +0.111 [+0.082, +0.142] & 117 / 32 & $<$0.0001 \\
+\midrule
+EmemoVeri (dev-tuned) & EmemoVeri (default weights) & Hit@1 & +0.048 [+0.020, +0.077] & 84 / 47 & 0.0070 \\
+EmemoVeri (dev-tuned) & EmemoVeri (default weights) & Hit@5 & +0.068 [+0.038, +0.100] & 105 / 53 & 0.0003 \\
+\midrule
+Snapshot RAG & Plain RAG (all repos) & Hit@1 & +0.044 [+0.031, +0.060] & 34 / 0 & $<$0.0001 \\
+Snapshot RAG & Plain RAG (all repos) & Hit@5 & +0.090 [+0.070, +0.111] & 69 / 0 & $<$0.0001 \\
+\bottomrule
+\end{tabular}

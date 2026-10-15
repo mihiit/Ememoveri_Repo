@@ -1,0 +1,17 @@
+\begin{tabular}{lcccccc}
+\toprule
+Condition & Hit@1 & Hit@3 & Hit@5 & MRR & Dead@5 & Other-repo@5 \\
+\midrule
+Random (local) & 0.016 & 0.047 & 0.081 & 0.051 & 0.000 & 0.000 \\
+Recency & 0.189 & 0.375 & 0.451 & 0.307 & 0.000 & 0.000 \\
+Popularity & 0.083 & 0.371 & 0.451 & 0.244 & 0.000 & 0.000 \\
+\midrule
+Plain RAG (all repos) & 0.333 & 0.495 & 0.551 & 0.433 & 0.179 & 0.267 \\
+Naive memory (local) & 0.357 & 0.531 & 0.612 & 0.470 & 0.181 & 0.000 \\
+\midrule
+Snapshot RAG & 0.378 & 0.564 & 0.641 & 0.497 & 0.000 & 0.000 \\
+\midrule
+EmemoVeri (default weights) & 0.406 & 0.607 & 0.684 & 0.532 & 0.000 & 0.000 \\
+EmemoVeri (dev-tuned) & 0.454 & 0.661 & 0.751 & 0.585 & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}

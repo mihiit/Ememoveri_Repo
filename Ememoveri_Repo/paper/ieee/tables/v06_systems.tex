@@ -1,0 +1,20 @@
+\begin{tabular}{lcccccc|ccc}
+\toprule
+ & \multicolumn{6}{c|}{Fresh 16 repositories (confirmatory; macro-average)} & Dev-test & Held-out 12 & Multi-lang.\ 8 \\
+System (all frozen) & Hit@1 & Hit@5 & MRR & NDCG@5 & Rec.@5 & All@5 & Hit@5 & Hit@5 & Hit@5 \\
+\midrule
+Snapshot RAG & 0.381 & 0.703 & 0.523 & 0.516 & 0.645 & 0.590 & 0.641 & 0.603 & 0.640 \\
+\midrule
+\sys{} blueprint & 0.427 & 0.740 & 0.566 & 0.554 & 0.678 & 0.616 & 0.684 & 0.636 & 0.664 \\
+\sys{} original, tuned & 0.450 & 0.794 & 0.600 & 0.601 & 0.738 & 0.680 & 0.751 & 0.693 & 0.728 \\
+\midrule
+Sim+State+Rec+Pop & 0.461 & 0.792 & 0.605 & 0.603 & 0.736 & 0.679 & 0.754 & 0.696 & 0.732 \\
+Similar-history + priors & 0.504 & 0.828 & 0.644 & 0.645 & 0.774 & 0.716 & 0.772 & 0.755 & 0.740 \\
+All channels, linear & 0.512 & 0.831 & 0.649 & 0.650 & 0.777 & 0.721 & 0.772 & 0.761 & 0.747 \\
+Learned ranker, logistic & 0.501 & 0.807 & 0.636 & 0.631 & 0.752 & 0.694 & 0.788 & 0.726 & 0.742 \\
+Learned ranker, GBT & 0.523 & 0.826 & 0.658 & 0.653 & 0.771 & 0.713 & 0.797 & 0.755 & 0.746 \\
+\midrule
+\sys{}-2 without evidence weights & 0.513 & 0.834 & 0.651 & 0.652 & 0.781 & 0.726 & 0.766 & 0.763 & 0.753 \\
+\sys{}-2 & 0.520 & 0.835 & 0.657 & 0.657 & 0.781 & 0.724 & 0.801 & 0.768 & 0.749 \\
+\bottomrule
+\end{tabular}

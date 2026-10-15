@@ -1,0 +1,266 @@
+{
+  "task_id": "fastapi_008",
+  "before_commit": "f1419322b3a68534af51d2bd4e7c8e6ad03e6607",
+  "knowledge_cutoff": "2020-11-05T21:58:33Z",
+  "n_claims": 2,
+  "n_leakage_failures": 0,
+  "leakage_failures": [],
+  "claims": [
+    {
+      "claim_id": "1680a603d9b9",
+      "statement": "Historical engineering evidence trail for docs/en/docs/tutorial/background-tasks.md",
+      "scope": "fastapi/docs",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 8,
+      "created_at": "2026-09-22T19:09:26.107494+00:00",
+      "updated_at": "2020-08-29T16:02:58+02:00",
+      "superseded_by": null,
+      "tags": [
+        "docs/en/docs/tutorial/background-tasks.md"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":sparkles: Add support for BackgroundTasks parameters (#103)\n\n* :sparkles: Add support for BackgroundTasks parameters\r\n\r\n* :bug: Fix type declaration in dependencies\r\n\r\n* :bug: Fix coverage of util in tests",
+          "timestamp": "2019-03-24T23:33:35+04:00",
+          "source_id": "9b045932607c6c5bbc9757bea5cb7c4019c63ea3",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":memo: Add note about Celery in background tasks",
+          "timestamp": "2019-03-25T23:47:25+04:00",
+          "source_id": "a2c9f666b54b0b666aa16ea4e2de9a48d25715f1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":art: Tweak external links, Markdown format, typos (#881)",
+          "timestamp": "2020-01-17T16:24:05+01:00",
+          "source_id": "a41a7296826a32bf03819bbc6149a3037a3da0bb",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": ":memo: Refactor docs, \"Tutorial - User Guide\" and \"Advanced User Guide\" (#887)",
+          "timestamp": "2020-01-18T16:21:54+01:00",
+          "source_id": "22982287ff5e8434fdaffcf118d56eb084f2490c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": ":sparkles: Add support for docs translations (#1168)\n\n* :globe_with_meridians: Refactor file structure to support internationalization\r\n\r\n* :white_check_mark: Update tests changed after i18n\r\n\r\n* :twisted_rightwards_arrows: Merge Typer style from master\r\n\r\n* :wrench: Update MkConfig with Typer-styles\r\n\r\n* :art: Format mkdocs.yml with cannonical form\r\n\r\n* :art: Format mkdocs.yml\r\n\r\n* :wrench: Update MkDocs config\r\n\r\n* :heavy_plus_sign: Add docs translation scripts dependencies\r\n\r\n* :sparkles: Add Typer scripts to handle translations\r\n\r\n* :sparkles: Add missing translation snippet to include\r\n\r\n* :sparkles: Update contributing docs, add docs for translations\r\n\r\n* :see_no_evil: Add docs_build to gitignore\r\n\r\n* :wrench: Update scripts with new locations and docs scripts\r\n\r\n* :construction_worker: Update docs deploy action with translations\r\n\r\n* :memo: Add note about languages not supported in the theme\r\n\r\n* :sparkles: Add first translation, for Spanish",
+          "timestamp": "2020-03-26T20:09:53+01:00",
+          "source_id": "6205935323ded4767438ee81623892621b353415",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\ud83d\udcdd Use Optional in docs (#1644)\n\n* Updated .py files with Optional tag (up to body_nested_models)\r\n\r\n* Update optionals\r\n\r\n* docs_src/ all updates, few I was unsure of\r\n\r\n* Updated markdown files with Optional param\r\n\r\n* es: Add Optional typing to index.md\r\n\r\n* Last of markdown files updated with Optional param\r\n\r\n* Update highlight lines\r\n\r\n* it: Add Optional typings\r\n\r\n* README.md: Update with Optional typings\r\n\r\n* Update more highlight increments\r\n\r\n* Update highlights\r\n\r\n* schema-extra-example.md: Update highlights\r\n\r\n* updating highlighting on website to reflect .py changes\r\n\r\n* Update highlighting for query-params & response-directly\r\n\r\n* Address PR comments\r\n\r\n* Get rid of unnecessary comment\r\n\r\n* \u23ea Revert Optional in Chinese docs as it probably also requires changes in text\r\n\r\n* \ud83c\udfa8 Apply format\r\n\r\n* \u23ea Revert modified example\r\n\r\n* \u267b\ufe0f Simplify example in docs\r\n\r\n* \ud83d\udcdd Update OpenAPI callback example to use Optional\r\n\r\n* \u2728 Add Optional types to tests\r\n\r\n* \ud83d\udcdd Update docs about query params, default to using Optional\r\n\r\n* \ud83c\udfa8 Update code examples line highlighting\r\n\r\n* \ud83d\udcdd Update nested models docs to use \"type parameters\" instead of \"subtypes\"\r\n\r\n* \ud83d\udcdd Add notes about FastAPI usage of None\r\n\r\nincluding:\r\n\r\n= None\r\n\r\nand\r\n\r\n= Query(None)\r\n\r\nand clarify relationship with Optional[str]\r\n\r\n* \ud83d\udcdd Add note about response_model_by_alias\r\n\r\n* \u267b\ufe0f Simplify query param list example\r\n\r\n* \ud83d\udd25 Remove test for removed example\r\n\r\n* \u2705 Update test for updated example\r\n\r\nCo-authored-by: Christopher Nguyen <chrisngyn99@gmail.com>\r\nCo-authored-by: yk396 <yk396@cornell.edu>\r\nCo-authored-by: Kai Chen <kaichen120@gmail.com>",
+          "timestamp": "2020-06-28T20:13:30+02:00",
+          "source_id": "1f01ce9615fe83ea5235820266e3a78ae8768847",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u270f\ufe0f Update docs to remove gender-specific references (#1824)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2020-08-09T16:35:44+02:00",
+          "source_id": "0a2fc78fead1e2522525db833abcda88fb6aca6b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83c\udfa8 Simplify docs hl_lines ranges and standardize 2 spaces between each range (#1863)",
+          "timestamp": "2020-08-29T16:02:58+02:00",
+          "source_id": "be669059fbc64dd36a5544d19eeaef5de8468f41",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "c43a8c15b84d",
+      "statement": "Historical engineering evidence trail for docs/en/docs/tutorial/sql-databases.md",
+      "scope": "fastapi/docs",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 20,
+      "created_at": "2026-09-22T19:09:26.863669+00:00",
+      "updated_at": "2020-08-29T16:02:58+02:00",
+      "superseded_by": null,
+      "tags": [
+        "docs/en/docs/tutorial/sql-databases.md"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":memo: Update Uvicorn docs with new --reload option (#74)",
+          "timestamp": "2019-03-09T22:10:25+04:00",
+          "source_id": "da60de33c1e56b102c71091f8cdae9bfa5c95fbc",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":card_file_box: Close the DB even if exceptions are raised (#89)\n\n* Close the DB even if exceptions are raised\r\n\r\n* :memo: Add note about closing DB in finally",
+          "timestamp": "2019-03-31T22:01:32+04:00",
+          "source_id": "1426b6200a12b83cc1e362adab70d7153f30c7f6",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":memo: Fix typo in SQL tutorial (#138)",
+          "timestamp": "2019-04-05T16:22:33+04:00",
+          "source_id": "50653e205f6c93bd54030f018ff2ee7a69af2e46",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":pencil2: Fix typos in docs, from forms (#176)",
+          "timestamp": "2019-04-27T17:05:06+04:00",
+          "source_id": "866af5bca6bf2edef69dad8ea7d58c47485bc5ce",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": ":sparkles: Implement support for Pydantic's ORM mode (#322)\n\n* :sparkles: Implement support for Pydantic's ORM mode\r\n\r\n* :building_construction: Re-structure/augment SQL tutorial source using ORM mode\r\n\r\n* :memo: Update SQL docs with SQLAlchemy, ORM mode, relationships\r\n\r\n* :fire: Remove unused util in tutorial\r\n\r\n* :memo: Add tutorials for simple dict bodies and responses\r\n\r\n* :fire: Remove old SQL tutorial\r\n\r\n* :white_check_mark: Add/update tests for SQL tutorial\r\n\r\n* :white_check_mark: Add tests for simple dicts (body and response)\r\n\r\n* :bug: Fix cloning field from original field",
+          "timestamp": "2019-06-20T11:31:32+02:00",
+          "source_id": "aa84ac8e3e305d76e71c0c1b31237517948fa12f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":memo: Add online SQLite browsers to docs (#330)",
+          "timestamp": "2019-06-27T13:12:38+02:00",
+          "source_id": "1c2cdb97e970d71fe258281b817f901d2d7f9be6",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": ":memo: Update, simplify, and clarify the SQL tutorial (#331)",
+          "timestamp": "2019-06-27T13:25:16+02:00",
+          "source_id": "ab77c069d4d7b40926423ab7a5b7cf2fb884ca9f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": ":sparkles: Add dependencies with yield (used as context managers) (#595)\n\n* :heavy_plus_sign: Add development/testing dependencies for Python 3.6\r\n\r\n* :sparkles: Add concurrency submodule with contextmanager_in_threadpool\r\n\r\n* :sparkles: Add AsyncExitStack to ASGI scope in FastAPI app call\r\n\r\n* :sparkles: Use async stack for contextmanager-able dependencies\r\n\r\nincluding running in threadpool sync dependencies\r\n\r\n* :white_check_mark: Add tests for contextmanager dependencies\r\n\r\nincluding internal raise checks when exceptions should be handled and when not\r\n\r\n* :white_check_mark: Add test for fake asynccontextmanager raiser\r\n\r\n* :bug: Fix mypy errors and coverage\r\n\r\n* :mute: Remove development logs and prints\r\n\r\n* :white_check_mark: Add tests for sub-contextmanagers, background tasks, and sync functions\r\n\r\n* :bug: Fix mypy errors for Python 3.7\r\n\r\n* :speech_balloon: Fix error texts for clarity\r\n\r\n* :memo: Add docs for dependencies with yield\r\n\r\n* :sparkles: Update SQL with SQLAlchemy tutorial to use dependencies with yield\r\n\r\nand add an alternative with a middleware (from the old tutorial)\r\n\r\n* :white_check_mark: Update SQL tests to remove DB file during the same tests\r\n\r\n* :white_check_mark: Add tests for example with middleware\r\n\r\nas a copy from the tests with dependencies with yield, removing the DB in the tests\r\n\r\n* :pencil2: Fix typos with suggestions from code review\r\n\r\nCo-Authored-By: dmontagu <35119617+dmontagu@users.noreply.github.com>",
+          "timestamp": "2019-10-09T13:01:58-05:00",
+          "source_id": "3f9f4a0f8f7f5db50fbdc3157fe692cf4e68e13f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":memo: Add docs for correctly using Peewee (#789)",
+          "timestamp": "2019-12-13T11:29:18+01:00",
+          "source_id": "04c8502cc70e1f1a9c8f73533ef650370932182a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":art: Tweak external links, Markdown format, typos (#881)",
+          "timestamp": "2020-01-17T16:24:05+01:00",
+          "source_id": "a41a7296826a32bf03819bbc6149a3037a3da0bb",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": ":memo: Refactor docs, \"Tutorial - User Guide\" and \"Advanced User Guide\" (#887)",
+          "timestamp": "2020-01-18T16:21:54+01:00",
+          "source_id": "22982287ff5e8434fdaffcf118d56eb084f2490c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":sparkles: Add mermaid.js support in Markdown fenced blocks for diagrams (#985)",
+          "timestamp": "2020-02-16T19:48:20+01:00",
+          "source_id": "25e94d6344d4659726422af34bfcabd6c8e99c02",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":art: Fix markdown code section rendering error in SQL tutorial (#1015)",
+          "timestamp": "2020-02-29T12:40:09+01:00",
+          "source_id": "48c24064950553304cfa56956a0ae6285f7b0e9a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": ":sparkles: Re-export utils from Starlette (#1064)\n\n* :sparkles: Re-export main features used from Starlette to simplify developer's code\r\n\r\n* :recycle: Refactor Starlette exports\r\n\r\n* :recycle: Refactor tutorial examples to use re-exported utils from Starlette\r\n\r\n* :memo: Add examples for all middlewares\r\n\r\n* :memo: Add new docs for middlewares\r\n\r\n* :memo: Add examples for custom responses\r\n\r\n* :memo: Extend docs for custom responses\r\n\r\n* :memo: Update docs and add notes explaining re-exports from Starlette everywhere\r\n\r\n* :bento: Update screenshot for HTTP status\r\n\r\n* :wrench: Update MkDocs config with new content\r\n\r\n* :recycle: Refactor tests to use re-exported utils from Starlette\r\n\r\n* :sparkles: Re-export WebSocketDisconnect from Starlette for tests\r\n\r\n* :white_check_mark: Add extra tests for extra re-exported middleware\r\n\r\n* :white_check_mark: Add tests for re-exported responses from Starlette\r\n\r\n* :sparkles: Add docs about mounting WSGI apps\r\n\r\n* :heavy_plus_sign: Add Flask as a dependency to test WSGIMiddleware\r\n\r\n* :white_check_mark: Test WSGIMiddleware example",
+          "timestamp": "2020-03-01T21:49:20+01:00",
+          "source_id": "0ac9b3ee5ce85b9ebc23698f8515e07017d9b9aa",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":art: Update terminal examples and Typer note (#1139)\n\n* :art: Update terminal examples with Termynal\r\n\r\n* :bento: Add Termynal scripts and styles from Typer for terminal examples",
+          "timestamp": "2020-03-19T14:39:29+01:00",
+          "source_id": "faf88cea0b5c1b0f6ff1f00306fae6e00f877f10",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": ":sparkles: Add support for docs translations (#1168)\n\n* :globe_with_meridians: Refactor file structure to support internationalization\r\n\r\n* :white_check_mark: Update tests changed after i18n\r\n\r\n* :twisted_rightwards_arrows: Merge Typer style from master\r\n\r\n* :wrench: Update MkConfig with Typer-styles\r\n\r\n* :art: Format mkdocs.yml with cannonical form\r\n\r\n* :art: Format mkdocs.yml\r\n\r\n* :wrench: Update MkDocs config\r\n\r\n* :heavy_plus_sign: Add docs translation scripts dependencies\r\n\r\n* :sparkles: Add Typer scripts to handle translations\r\n\r\n* :sparkles: Add missing translation snippet to include\r\n\r\n* :sparkles: Update contributing docs, add docs for translations\r\n\r\n* :see_no_evil: Add docs_build to gitignore\r\n\r\n* :wrench: Update scripts with new locations and docs scripts\r\n\r\n* :construction_worker: Update docs deploy action with translations\r\n\r\n* :memo: Add note about languages not supported in the theme\r\n\r\n* :sparkles: Add first translation, for Spanish",
+          "timestamp": "2020-03-26T20:09:53+01:00",
+          "source_id": "6205935323ded4767438ee81623892621b353415",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": ":memo: Add an example of setting up a test database (#1144)\n\n* Add an example of setting up a test database.\r\n\r\n* :memo: Add/update docs for testing a DB with dependency overrides\r\n\r\n* :wrench: Update test script, remove line removing test file as it is removed during testing\r\n\r\n* :white_check_mark: Update testing coverage pragma\r\n\r\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2020-04-05T13:53:09+02:00",
+          "source_id": "d96223460bed36e117fb7292e032ee85c01567de",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":memo: Add note about Alembic in project generator in SQL docs (#1183)\n\n* Update sql-databases alembic docs\r\n\r\nWas helpful to refer to the full-stack project when integrating alembic into my own project\r\n\r\n* :memo: Update Alembic note in docs\r\n\r\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2020-04-05T15:15:39+02:00",
+          "source_id": "07e094fd5077e12150099390eb4ed2d8532db707",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udcdd Add link in sql-databases.md tutorial to async-sql-databases.md in advanced section. (#1813)\n\n* Add link in sql-databases.md tutorial section to async-sql-databases.md in advanced section.\r\n\r\n* \ud83c\udfa8 Update note format\r\n\r\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2020-08-03T18:37:02+02:00",
+          "source_id": "604fea9fc15f577de3c3a28e4797d850f101f37a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83c\udfa8 Simplify docs hl_lines ranges and standardize 2 spaces between each range (#1863)",
+          "timestamp": "2020-08-29T16:02:58+02:00",
+          "source_id": "be669059fbc64dd36a5544d19eeaef5de8468f41",
+          "strength": 1.0
+        }
+      ]
+    }
+  ]
+}

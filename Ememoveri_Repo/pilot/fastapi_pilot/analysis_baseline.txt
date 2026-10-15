@@ -1,0 +1,93 @@
+Raw rows: 220  ->  unique cells after keeping latest attempt: 198
+
+================================================================================================
+OVERALL OUTCOME COUNTS (unique cells)
+================================================================================================
+  success                      49
+  truncated_false_success      14
+  failure                      75
+  infra_failure                60
+
+================================================================================================
+PER-MODEL  (denominator = real attempts, infra failures excluded)
+================================================================================================
+groq:openai/gpt-oss-120b
+   cells=28  infra_failures=5
+   lenient (git apply): 19/23 = 82.6%  (95% CI 63%-93%)
+   STRICT             : 16/23 = 69.6%  (95% CI 49%-84%)
+groq:openai/gpt-oss-20b
+   cells=36  infra_failures=1
+   lenient (git apply): 13/35 = 37.1%  (95% CI 23%-54%)
+   STRICT             : 12/35 = 34.3%  (95% CI 21%-51%)
+groq:qwen/qwen3.6-27b
+   cells=26  infra_failures=26
+   lenient (git apply): n=0
+   STRICT             : n=0
+groq:qwen/qwen3.8-27b
+   cells=36  infra_failures=0
+   lenient (git apply): 19/36 = 52.8%  (95% CI 37%-68%)
+   STRICT             : 9/36 = 25.0%  (95% CI 14%-41%)
+ollama:llama3.1:8b
+   cells=36  infra_failures=28
+   lenient (git apply): 8/8 = 100.0%  (95% CI 68%-100%)
+   STRICT             : 8/8 = 100.0%  (95% CI 68%-100%)
+ollama:qwen2.5-coder:1.5b
+   cells=36  infra_failures=0
+   lenient (git apply): 4/36 = 11.1%  (95% CI 4%-25%)
+   STRICT             : 4/36 = 11.1%  (95% CI 4%-25%)
+
+================================================================================================
+PER-CONDITION, WITHIN EACH MODEL  (STRICT success, real attempts only)
+================================================================================================
+
+groq:openai/gpt-oss-120b
+   NO_MEMORY      5/6 = 83.3%  (95% CI 44%-97%)
+   PLAIN_RAG      3/5 = 60.0%  (95% CI 23%-88%)
+   NAIVE_MEMORY   5/7 = 71.4%  (95% CI 36%-92%)
+   EMEMOVERI      3/5 = 60.0%  (95% CI 23%-88%)
+
+groq:openai/gpt-oss-20b
+   NO_MEMORY      3/8 = 37.5%  (95% CI 14%-69%)
+   PLAIN_RAG      3/9 = 33.3%  (95% CI 12%-65%)
+   NAIVE_MEMORY   3/9 = 33.3%  (95% CI 12%-65%)
+   EMEMOVERI      3/9 = 33.3%  (95% CI 12%-65%)
+
+groq:qwen/qwen3.6-27b: only 0 real attempts -- too few to break down, skipped
+
+groq:qwen/qwen3.8-27b
+   NO_MEMORY      4/9 = 44.4%  (95% CI 19%-73%)
+   PLAIN_RAG      2/9 = 22.2%  (95% CI 6%-55%)
+   NAIVE_MEMORY   2/9 = 22.2%  (95% CI 6%-55%)
+   EMEMOVERI      1/9 = 11.1%  (95% CI 2%-44%)
+
+ollama:llama3.1:8b
+   NO_MEMORY      2/2 = 100.0%  (95% CI 34%-100%)
+   PLAIN_RAG      2/2 = 100.0%  (95% CI 34%-100%)
+   NAIVE_MEMORY   2/2 = 100.0%  (95% CI 34%-100%)
+   EMEMOVERI      2/2 = 100.0%  (95% CI 34%-100%)
+
+ollama:qwen2.5-coder:1.5b
+   NO_MEMORY      1/9 = 11.1%  (95% CI 2%-44%)
+   PLAIN_RAG      1/9 = 11.1%  (95% CI 2%-44%)
+   NAIVE_MEMORY   1/9 = 11.1%  (95% CI 2%-44%)
+   EMEMOVERI      1/9 = 11.1%  (95% CI 2%-44%)
+
+================================================================================================
+PAIRED COMPARISON: each condition vs NO_MEMORY (same task + model, STRICT success)
+Exact McNemar on discordant pairs. UNDERPOWERED: treat as descriptive only.
+================================================================================================
+  PLAIN_RAG     vs NO_MEMORY: paired cells= 33  better=0  worse=4  tied=29  exact McNemar p=0.125
+  NAIVE_MEMORY  vs NO_MEMORY: paired cells= 34  better=1  worse=5  tied=28  exact McNemar p=0.219
+  EMEMOVERI     vs NO_MEMORY: paired cells= 33  better=1  worse=6  tied=26  exact McNemar p=0.125
+
+================================================================================================
+ERROR TAXONOMY (real attempts only)
+================================================================================================
+  OK -- applies cleanly                                 49 (35.5%)
+  Malformed patch -- other (content corruption / rejection)  29 (21.0%)
+  No patch (model declined)                             23 (16.7%)
+  No patch generated / unparseable                      16 (11.6%)
+  Truncated output (applies, but destructive)           14 (10.1%)
+  Malformed patch -- hunk arithmetic                     7 (5.1%)
+
+Wrote pilot_grid_results_clean.csv

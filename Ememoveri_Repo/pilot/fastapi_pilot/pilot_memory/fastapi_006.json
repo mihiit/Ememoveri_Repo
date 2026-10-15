@@ -1,0 +1,162 @@
+{
+  "task_id": "fastapi_006",
+  "before_commit": "933d4327fbea006ac022a526895fd282a7f752c5",
+  "knowledge_cutoff": "2019-11-24T14:18:03+01:00",
+  "n_claims": 1,
+  "n_leakage_failures": 0,
+  "leakage_failures": [],
+  "claims": [
+    {
+      "claim_id": "a9c39e906cd3",
+      "statement": "Historical engineering evidence trail for fastapi/utils.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 17,
+      "created_at": "2026-09-22T19:09:24.860867+00:00",
+      "updated_at": "2019-09-29T16:19:09-05:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/utils.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":recycle: Refactor, fix and update code",
+          "timestamp": "2018-12-06T20:24:50+04:00",
+          "source_id": "b9d912c6380661647b51c322820fcb4ba08f32d2",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":sparkles: Update parameter names and order\n\nfix mypy types, refactor, lint",
+          "timestamp": "2018-12-07T19:12:16+04:00",
+          "source_id": "0e19c24014c96e241bd73bede2805e21fc20c9d8",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":sparkles: Update requests with body, rename params",
+          "timestamp": "2018-12-08T11:55:36+04:00",
+          "source_id": "db3c270f8e402627c29a288a2bacd6ac57cfca0c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":recycle: Re-format tutorials, files names and tests\n\nfor tutorial files",
+          "timestamp": "2018-12-18T21:59:06+04:00",
+          "source_id": "00e2e544c76cc0a05e96c7a526ef175ac5764525",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":green_heart: Revert to flit install and re-format\n\nAs it has shown to be more reliable, and closer to final user environments",
+          "timestamp": "2018-12-18T22:36:04+04:00",
+          "source_id": "7da9625505386bae646c09a21b8b02a826e42119",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":bug: Fix constrained bytes, from defaults in Pydantic\n\n #2",
+          "timestamp": "2019-01-05T17:30:27+04:00",
+          "source_id": "577c5a84db307a13668f328857f8ea593d6048da",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "Additional Responses implementation",
+          "timestamp": "2019-03-22T22:40:07+03:00",
+          "source_id": "aa0bca7bb2dc544f8480e9b2a4dab02ed369b9e6",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "Formatting according to guide",
+          "timestamp": "2019-03-22T22:54:48+03:00",
+          "source_id": "84a300ef842bc41b4955973a280366952097fd32",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": ":sparkles: Add/refactor addditional responses, tests, docs",
+          "timestamp": "2019-04-05T13:54:00+04:00",
+          "source_id": "2bd775988f77df397aee3a1caf4de90146b7f363",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":recycle: Update Pydantic usage, types, values, minor structure changes (#164)",
+          "timestamp": "2019-04-16T23:26:09+04:00",
+          "source_id": "546d233dec3f686f7f1c06f1fc57c82a7c9c45fe",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":arrow_up: Upgrade Pydantic to 0.28 (#320)",
+          "timestamp": "2019-06-18T09:37:40+02:00",
+          "source_id": "f0df79aa918798d466e87c2163b2d3e81c51e854",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": ":sparkles: Implement support for Pydantic's ORM mode (#322)\n\n* :sparkles: Implement support for Pydantic's ORM mode\r\n\r\n* :building_construction: Re-structure/augment SQL tutorial source using ORM mode\r\n\r\n* :memo: Update SQL docs with SQLAlchemy, ORM mode, relationships\r\n\r\n* :fire: Remove unused util in tutorial\r\n\r\n* :memo: Add tutorials for simple dict bodies and responses\r\n\r\n* :fire: Remove old SQL tutorial\r\n\r\n* :white_check_mark: Add/update tests for SQL tutorial\r\n\r\n* :white_check_mark: Add tests for simple dicts (body and response)\r\n\r\n* :bug: Fix cloning field from original field",
+          "timestamp": "2019-06-20T11:31:32+02:00",
+          "source_id": "aa84ac8e3e305d76e71c0c1b31237517948fa12f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":recycle: Refine internal type declarations and logic around them (#338)",
+          "timestamp": "2019-06-27T20:51:17+02:00",
+          "source_id": "dcc1e1bcf823927817d8c133962bdb7a29e3d797",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":building_construction: Fix same function names in different modules with composite bodies (#347)\n\n* :building_construction: Implement unique IDs for dynamic models\r\n\r\nlike those used for composite bodies and responses. IDs based on path (not only on function name, as it can be duplicated in a different module).\r\n\r\n* :white_check_mark: Add tests for same function name and composite body\r\n\r\n* :white_check_mark: Update OpenAPI in tests with new dynamic model ID generation",
+          "timestamp": "2019-06-28T19:35:16+02:00",
+          "source_id": "687065509b047a642acd1d281d6d68c6698509b1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":arrow_up: Upgrade Pydantic to 0.30 (#384)\n\n* bump pydantic to 0.30\r\n\r\n* :pushpin: Pin Pydantic to 0.30 as 0.31 hasn't been released",
+          "timestamp": "2019-07-12T18:56:25-05:00",
+          "source_id": "46a986cacf89d9b5a177daf91edf0ac95ddaa7c0",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": ":sparkles: Add support and tests for Pydantic dataclasses in response_model (#454)",
+          "timestamp": "2019-08-30T18:12:15-05:00",
+          "source_id": "3025a368c6ea7cc9260fe81c20b8af30e9d8aab5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": ":sparkles: Add support for strings and __future__ type annotations (#451)\n\n* Add support for strings and __future__ annotations\r\n\r\n* Add comments indicating reason for string annotations\r\n\r\n* Fix ignores (including removing some unused ignores)",
+          "timestamp": "2019-09-29T16:19:09-05:00",
+          "source_id": "d8fe307d61a55148a4d95c550f0ef33148ba8681",
+          "strength": 1.0
+        }
+      ]
+    }
+  ]
+}

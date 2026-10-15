@@ -1,0 +1,618 @@
+{
+  "task_id": "fastapi_009",
+  "before_commit": "ef1c927b0558d414e199a666833942a6fabb3a51",
+  "knowledge_cutoff": "2026-04-23T16:36:15Z",
+  "n_claims": 5,
+  "n_leakage_failures": 0,
+  "leakage_failures": [],
+  "claims": [
+    {
+      "claim_id": "6549e44692aa",
+      "statement": "Historical engineering evidence trail for fastapi/_compat/__init__.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 9,
+      "created_at": "2026-09-22T19:09:29.148244+00:00",
+      "updated_at": "2026-03-15T12:44:39+01:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/_compat/__init__.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for `from pydantic.v1 import BaseModel`, mixed Pydantic v1 and v2 models in the same app (#14168)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-10-11T18:45:54+02:00",
+          "source_id": "d34918abf00c93ac592c5d1d1c55650d8c1b92ec",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix internal Pydantic v1 compatibility (warnings) for Python 3.14 and Pydantic 2.12.1 (#14186)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-10-20T13:26:49+02:00",
+          "source_id": "d8c691f7f09989fa51b331b8a7a1ecfe93815a2f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for `pydantic.v1` (#14609)",
+          "timestamp": "2025-12-27T13:54:56+01:00",
+          "source_id": "e3006305518a56ea35f62a31748ad26fe4356fcc",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor internals, cleanup unneeded Pydantic v1 specific logic (#14856)",
+          "timestamp": "2026-02-06T19:01:05+01:00",
+          "source_id": "3c49346238643287780d9f0d673f88b0d02df109",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u267b\ufe0f Simplify internals, remove Pydantic v1 only logic, no longer needed (#14857)",
+          "timestamp": "2026-02-06T19:04:24+00:00",
+          "source_id": "cf55bade7ea6e4bf85a167e8aed1c6167e7a4196",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor internals, simplify Pydantic v2/v1 utils, `create_model_field`, better types for `lenient_issubclass` (#14860)",
+          "timestamp": "2026-02-07T08:08:07+00:00",
+          "source_id": "d59fbc3494940c9afe675cc89271bd0fa744574f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor and simplify Pydantic v2 (and v1) compatibility internal utils (#14862)",
+          "timestamp": "2026-02-07T08:34:32+00:00",
+          "source_id": "2e7d3754cd1c85feb4dfa14ee29a509133cfc203",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Add `ty` to precommit (#15091)\n\nCo-authored-by: pre-commit-ci-lite[bot] <117423508+pre-commit-ci-lite[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+          "timestamp": "2026-03-15T12:44:39+01:00",
+          "source_id": "98b269b51ef8ff9fe8b66d7bcd31f2d9770fc18f",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "c50659d15f2e",
+      "statement": "Historical engineering evidence trail for fastapi/_compat/v2.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 20,
+      "created_at": "2026-09-22T19:09:31.477638+00:00",
+      "updated_at": "2026-03-15T12:44:39+01:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/_compat/v2.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc1b Avoid accessing non-existing \"$ref\" key for Pydantic v2 compat remapping (#14361)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-02T05:04:13+01:00",
+          "source_id": "8f99a2b7347aeaff09ca3f06eaecf52a786ef2dc",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix optional sequence handling in `serialize sequence value` with Pydantic V2 (#14297)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-02T08:10:27+01:00",
+          "source_id": "0f613d9051ce8a84b19c3786647a6d0cfc7973f6",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix OpenAPI schema support for computed fields when using `separate_input_output_schemas=False` (#13207)\n\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>\nCo-authored-by: svlandeg <svlandeg@github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: svlandeg <sofie.vanlandeghem@gmail.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-02T09:22:08+00:00",
+          "source_id": "f95a174288c07182905b6742b973e6e174dac598",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix optional sequence handling with new union syntax from Python 3.10 (#14430)\n\nCo-authored-by: pre-commit-ci-lite[bot] <117423508+pre-commit-ci-lite[bot]@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-02T16:59:38+00:00",
+          "source_id": "80d69ae0bb393c728c61c41086b770237b7b676c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `separate_input_output_schemas=False` with `computed_field` (#14453)",
+          "timestamp": "2025-12-05T21:19:30+01:00",
+          "source_id": "812a1926f06391b22b081fdb11fe7528e3b91293",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix handling arbitrary types when using `arbitrary_types_allowed=True` (#14482)",
+          "timestamp": "2025-12-10T11:36:29+01:00",
+          "source_id": "42b250d14dd42d3c0c24dd085fa53878172a985f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix support for tagged union with discriminator inside of `Annotated` with `Body()` (#14512)",
+          "timestamp": "2025-12-12T15:31:21+01:00",
+          "source_id": "c0556ac3a50420d0ba298b5641517c61f3c1c2c4",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix parameter aliases (#14371)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-12T15:56:57+01:00",
+          "source_id": "d86c47477e4d91b5e1f07973b3437908558a8b4b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for `pydantic.v1` (#14609)",
+          "timestamp": "2025-12-27T13:54:56+01:00",
+          "source_id": "e3006305518a56ea35f62a31748ad26fe4356fcc",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Run mypy by pre-commit (#14806)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2026-02-03T19:08:08+01:00",
+          "source_id": "f3f498100f1d0edc344e200b215d42a6e46473fd",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor internals, cleanup unneeded Pydantic v1 specific logic (#14856)",
+          "timestamp": "2026-02-06T19:01:05+01:00",
+          "source_id": "3c49346238643287780d9f0d673f88b0d02df109",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u267b\ufe0f Simplify internals, remove Pydantic v1 only logic, no longer needed (#14857)",
+          "timestamp": "2026-02-06T19:04:24+00:00",
+          "source_id": "cf55bade7ea6e4bf85a167e8aed1c6167e7a4196",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor internals, simplify Pydantic v2/v1 utils, `create_model_field`, better types for `lenient_issubclass` (#14860)",
+          "timestamp": "2026-02-07T08:08:07+00:00",
+          "source_id": "d59fbc3494940c9afe675cc89271bd0fa744574f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor and simplify Pydantic v2 (and v1) compatibility internal utils (#14862)",
+          "timestamp": "2026-02-07T08:34:32+00:00",
+          "source_id": "2e7d3754cd1c85feb4dfa14ee29a509133cfc203",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83c\udfa8 Update internal types for Python 3.10 (#14898)",
+          "timestamp": "2026-02-11T18:41:21+00:00",
+          "source_id": "3da206c06df1283518a54b18f27bed33f2d22612",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix JSON Schema for files, use `contentMediaType` instead of `format: binary` (#14953)",
+          "timestamp": "2026-02-21T14:01:31+01:00",
+          "source_id": "e8b98d21871f64234520c1e770f39e6bfea3b0d5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Serialize JSON response with Pydantic (in Rust), when there's a Pydantic return type or response model (#14962)",
+          "timestamp": "2026-02-22T17:07:19+01:00",
+          "source_id": "590a5e535587cc07041ba12d308c748433ccb168",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Add `ty` to precommit (#15091)\n\nCo-authored-by: pre-commit-ci-lite[bot] <117423508+pre-commit-ci-lite[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+          "timestamp": "2026-03-15T12:44:39+01:00",
+          "source_id": "98b269b51ef8ff9fe8b66d7bcd31f2d9770fc18f",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "667cedf0e587",
+      "statement": "Historical engineering evidence trail for fastapi/dependencies/utils.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 20,
+      "created_at": "2026-09-22T19:09:33.533149+00:00",
+      "updated_at": "2026-03-15T12:44:39+01:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/dependencies/utils.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix support for `if TYPE_CHECKING`,  non-evaluated stringified annotations (#14485)",
+          "timestamp": "2025-12-10T13:06:05+01:00",
+          "source_id": "7ba042e069ad424a584a37f1db03887798d9af80",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix parameter aliases (#14371)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-12T15:56:57+01:00",
+          "source_id": "d86c47477e4d91b5e1f07973b3437908558a8b4b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udd0a Add deprecation warnings when using `pydantic.v1` (#14583)",
+          "timestamp": "2025-12-21T17:44:10+01:00",
+          "source_id": "6e42bcd8ce2ade33d94f478310dad20ee84f8f0f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udd0a Add a custom `FastAPIDeprecationWarning` (#14605)",
+          "timestamp": "2025-12-26T12:45:20+00:00",
+          "source_id": "535b5daa317a9d1d1f9a1058e57650a7beefa861",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for `pydantic.v1` (#14609)",
+          "timestamp": "2025-12-27T13:54:56+01:00",
+          "source_id": "e3006305518a56ea35f62a31748ad26fe4356fcc",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Run mypy by pre-commit (#14806)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2026-02-03T19:08:08+01:00",
+          "source_id": "f3f498100f1d0edc344e200b215d42a6e46473fd",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\ud83d\udeb8 Improve error message for invalid query parameter type annotations (#14479)\n\nCo-authored-by: Anton.D <anton.dehtiarenko@chdp-tech.net>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+          "timestamp": "2026-02-04T14:24:59+01:00",
+          "source_id": "41352de24c41f3df540ea410696aa2116ab59394",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix TYPE_CHECKING annotations for Python 3.14 (PEP 649) (#14789)",
+          "timestamp": "2026-02-04T14:49:44+01:00",
+          "source_id": "09f5941f0e18db2b28b40d35a5da7a94c23eb9ed",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Allow `Response` type hint as dependency annotation (#14794)\n\nCo-authored-by: pre-commit-ci-lite[bot] <117423508+pre-commit-ci-lite[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2026-02-05T18:23:16+00:00",
+          "source_id": "b49435becdf53942be248fc2ffc7f53df5ac313c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for PEP695 `TypeAliasType` (#13920)\n\nCo-authored-by: lokidev <torsten.zielke@protonmail.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2026-02-05T18:34:34+00:00",
+          "source_id": "97145588f5442aa7c3830173813d5d1a2c893521",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix using `Json[list[str]]` type (issue #10997) (#14616)\n\nCo-authored-by: pre-commit-ci-lite[bot] <117423508+pre-commit-ci-lite[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2026-02-05T18:41:43+00:00",
+          "source_id": "c5fd75a321496b1f8212744bde217ec8ea956154",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u267b\ufe0f Simplify internals, remove Pydantic v1 only logic, no longer needed (#14857)",
+          "timestamp": "2026-02-06T19:04:24+00:00",
+          "source_id": "cf55bade7ea6e4bf85a167e8aed1c6167e7a4196",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor internals, simplify Pydantic v2/v1 utils, `create_model_field`, better types for `lenient_issubclass` (#14860)",
+          "timestamp": "2026-02-07T08:08:07+00:00",
+          "source_id": "d59fbc3494940c9afe675cc89271bd0fa744574f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor and simplify Pydantic v2 (and v1) compatibility internal utils (#14862)",
+          "timestamp": "2026-02-07T08:34:32+00:00",
+          "source_id": "2e7d3754cd1c85feb4dfa14ee29a509133cfc203",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Simplify reading files in memory, do it sequentially instead of (fake) parallel (#14884)",
+          "timestamp": "2026-02-10T12:36:53+01:00",
+          "source_id": "25270fcee0c71c3bc661e40501fa3838beb6d99b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Python 3.9 (#14897)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-11T19:32:12+01:00",
+          "source_id": "ad4e8e006016e088dbccdb73305a58a1338b1ad9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for streaming JSON Lines and binary data with `yield` (#15022)",
+          "timestamp": "2026-02-27T19:56:47+01:00",
+          "source_id": "749cefdeb1428ba5c3911b03c4a72993f7eb3747",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Add `ty` to precommit (#15091)\n\nCo-authored-by: pre-commit-ci-lite[bot] <117423508+pre-commit-ci-lite[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+          "timestamp": "2026-03-15T12:44:39+01:00",
+          "source_id": "98b269b51ef8ff9fe8b66d7bcd31f2d9770fc18f",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "d5990d2d0104",
+      "statement": "Historical engineering evidence trail for fastapi/encoders.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 12,
+      "created_at": "2026-09-22T19:09:35.609711+00:00",
+      "updated_at": "2026-03-15T12:44:39+01:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/encoders.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Update mypy to 1.14.1 (#12970)\n\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>\nCo-authored-by: svlandeg <svlandeg@github.com>\nCo-authored-by: svlandeg <sofie.vanlandeghem@gmail.com>",
+          "timestamp": "2025-09-20T14:05:51+02:00",
+          "source_id": "a95e91e46e230db27a75f39639a1f255a8b177ae",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `jsonable_encoder` alters `json_encoders` of Pydantic v1 objects (#4972)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+          "timestamp": "2025-09-20T19:57:18+02:00",
+          "source_id": "2dc769b12174b0f7ad5c2ac16419fc4027ad8372",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for `from pydantic.v1 import BaseModel`, mixed Pydantic v1 and v2 models in the same app (#14168)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-10-11T18:45:54+02:00",
+          "source_id": "d34918abf00c93ac592c5d1d1c55650d8c1b92ec",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix internal Pydantic v1 compatibility (warnings) for Python 3.14 and Pydantic 2.12.1 (#14186)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-10-20T13:26:49+02:00",
+          "source_id": "d8c691f7f09989fa51b331b8a7a1ecfe93815a2f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2795 Migrate internal reference documentation from `typing_extensions.Doc` to `annotated_doc.Doc` (#14222)",
+          "timestamp": "2025-10-23T22:31:35+02:00",
+          "source_id": "d390f2e41fb508de416071d481937bc7be486589",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `TypeError` when encoding a decimal with a `NaN` or `Infinity` value (#12935)\n\nSigned-off-by: Kent Huang <kent@infuseai.io>",
+          "timestamp": "2025-12-02T04:31:59+01:00",
+          "source_id": "20f40b29c0241fc73d82857ab456ef6fda15659f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for `pydantic.v1` (#14609)",
+          "timestamp": "2025-12-27T13:54:56+01:00",
+          "source_id": "e3006305518a56ea35f62a31748ad26fe4356fcc",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83c\udfa8 Tweak types for mypy (#14816)",
+          "timestamp": "2026-02-04T14:20:36+00:00",
+          "source_id": "440bfd70a948c187dadb2e89ee7e94933e867a00",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83c\udfa8 Update internal types for Python 3.10 (#14898)",
+          "timestamp": "2026-02-11T18:41:21+00:00",
+          "source_id": "3da206c06df1283518a54b18f27bed33f2d22612",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Add `ty` to precommit (#15091)\n\nCo-authored-by: pre-commit-ci-lite[bot] <117423508+pre-commit-ci-lite[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+          "timestamp": "2026-03-15T12:44:39+01:00",
+          "source_id": "98b269b51ef8ff9fe8b66d7bcd31f2d9770fc18f",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "da2e915533e3",
+      "statement": "Historical engineering evidence trail for tests/test_jsonable_encoder.py",
+      "scope": "fastapi/tests",
+      "state": "CORROBORATED",
+      "trust": 0.815,
+      "evidence_count": 5,
+      "created_at": "2026-09-22T19:09:37.744324+00:00",
+      "updated_at": "2026-02-17T09:59:14+00:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/test_jsonable_encoder.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `jsonable_encoder` alters `json_encoders` of Pydantic v1 objects (#4972)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+          "timestamp": "2025-09-20T19:57:18+02:00",
+          "source_id": "2dc769b12174b0f7ad5c2ac16419fc4027ad8372",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `TypeError` when encoding a decimal with a `NaN` or `Infinity` value (#12935)\n\nSigned-off-by: Kent Huang <kent@infuseai.io>",
+          "timestamp": "2025-12-02T04:31:59+01:00",
+          "source_id": "20f40b29c0241fc73d82857ab456ef6fda15659f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for `pydantic.v1` (#14609)",
+          "timestamp": "2025-12-27T13:54:56+01:00",
+          "source_id": "e3006305518a56ea35f62a31748ad26fe4356fcc",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83c\udfa8 Upgrade typing syntax for Python 3.10 (#14932)\n\nCo-authored-by: Copilot <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: tiangolo <1326112+tiangolo@users.noreply.github.com>\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-17T09:59:14+00:00",
+          "source_id": "faee822574d3c202123f48eb09b9bd207385335b",
+          "strength": 1.0
+        }
+      ]
+    }
+  ]
+}

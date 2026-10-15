@@ -1,0 +1,57 @@
+{
+  "steps": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "trust_values": [
+    0.5,
+    0.815,
+    1.0,
+    0.335,
+    0.335
+  ],
+  "state_labels": [
+    "PROVISIONAL",
+    "CORROBORATED",
+    "REFINED",
+    "CONTESTED",
+    "SUPERSEDED"
+  ],
+  "transition_log": [
+    {
+      "step": "initial",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "n_evidence": 0
+    },
+    {
+      "step": "corroboration",
+      "state": "CORROBORATED",
+      "trust": 0.815,
+      "n_evidence": 1
+    },
+    {
+      "step": "refinement",
+      "state": "REFINED",
+      "trust": 1.0,
+      "n_evidence": 2
+    },
+    {
+      "step": "contradiction",
+      "state": "CONTESTED",
+      "trust": 0.335,
+      "n_evidence": 3
+    },
+    {
+      "step": "supersession",
+      "state": "SUPERSEDED",
+      "trust": 0.335,
+      "n_evidence": 4
+    }
+  ],
+  "state_consistency_check_passed": true,
+  "matches_expected_demo_lifecycle": true
+}

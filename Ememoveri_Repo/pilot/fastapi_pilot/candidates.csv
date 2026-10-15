@@ -1,0 +1,8 @@
+1990ecb44,SUPERSESSION,remove slim package stub already deprecated
+535b5daa3,REFINEMENT,add custom FastAPIDeprecationWarning
+bdd991244,REFINEMENT,fix typo in deprecation warnings
+6e98249c2,CONTRADICTION,fix async test example that was triggering deprecation warning
+4e50f5345,CONTRADICTION,fix validator-caused incorrect output key order
+d5d9a2093,CONTRADICTION,fix incorrect example in docs first steps
+074d39fa1,CONTRADICTION,fix incorrect Celery URLs in docs
+7815a32f2,VALID_KNOWLEDGE,update Pydantic v2 code to address deprecations

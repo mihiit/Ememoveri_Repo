@@ -1,0 +1,20 @@
+\begin{tabular}{l@{\hspace{4pt}}ccccc|ccc}
+\toprule
+ & \multicolumn{5}{c|}{Fresh 16 (macro-average)} & \multicolumn{3}{c}{Hit@5 on earlier sets} \\
+System (frozen) & Hit@1 & Hit@5 & MRR & NDCG & All@5 & Dev-test & Held-out & Multi. \\
+\midrule
+Snapshot RAG & 0.381 & 0.703 & 0.523 & 0.516 & 0.590 & 0.641 & 0.603 & 0.640 \\
+\midrule
+\sys{}-1, blueprint & 0.427 & 0.740 & 0.566 & 0.554 & 0.616 & 0.684 & 0.636 & 0.664 \\
+\sys{}-1, tuned & 0.450 & 0.794 & 0.600 & 0.601 & 0.680 & 0.751 & 0.693 & 0.728 \\
+\midrule
+Sim+State+Rec+Pop & 0.461 & 0.792 & 0.605 & 0.603 & 0.679 & 0.754 & 0.696 & 0.732 \\
+Similar-history+priors & 0.504 & 0.828 & 0.644 & 0.645 & 0.716 & 0.772 & 0.755 & 0.740 \\
+All channels, linear & 0.512 & 0.831 & 0.649 & 0.650 & 0.721 & 0.772 & 0.761 & 0.747 \\
+Ranker, logistic & 0.501 & 0.807 & 0.636 & 0.631 & 0.694 & 0.788 & 0.726 & 0.742 \\
+Ranker, GBT & 0.523 & 0.826 & 0.658 & 0.653 & 0.713 & 0.797 & 0.755 & 0.746 \\
+\midrule
+\sys{}-2, no evid.\ weights & 0.513 & 0.834 & 0.651 & 0.652 & 0.726 & 0.766 & 0.763 & 0.753 \\
+\sys{}-2 & 0.520 & 0.835 & 0.657 & 0.657 & 0.724 & 0.801 & 0.768 & 0.749 \\
+\bottomrule
+\end{tabular}

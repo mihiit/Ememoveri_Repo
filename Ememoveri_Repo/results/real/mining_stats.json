@@ -1,0 +1,29 @@
+{
+ "fastapi": {
+  "commits": 7712,
+  "source_adds": 59,
+  "source_mods": 1476,
+  "source_deletes": 7,
+  "source_renames": 1,
+  "revert_commits": 4,
+  "revert_commits_touching_source": 3
+ },
+ "yt-dlp": {
+  "commits": 22449,
+  "source_adds": 528,
+  "source_mods": 12324,
+  "source_deletes": 327,
+  "source_renames": 853,
+  "revert_commits": 51,
+  "revert_commits_touching_source": 5
+ },
+ "browser-use": {
+  "commits": 7003,
+  "source_adds": 258,
+  "source_mods": 6651,
+  "source_deletes": 103,
+  "source_renames": 47,
+  "revert_commits": 20,
+  "revert_commits_touching_source": 15
+ }
+}

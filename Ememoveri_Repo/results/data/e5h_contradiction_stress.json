@@ -1,0 +1,9 @@
+{
+  "n_scenarios": 500,
+  "contradiction_detection_rate": 0.964,
+  "resolution_correct_rate_given_resolved": 1.0,
+  "inappropriate_commitment_rate_given_resolved": 0.0,
+  "abstention_rate": 0.514,
+  "abstention_precision": 0.0622568093385214,
+  "coverage": 0.486
+}

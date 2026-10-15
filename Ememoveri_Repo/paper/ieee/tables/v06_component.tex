@@ -1,0 +1,17 @@
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{4}{c}{Fresh 16 (confirmatory set; post-hoc analysis)} & Held-out 12 & Multi-lang.\ 8 \\
+Variant (one ingredient removed) & Hit@5 & $\Delta$Hit@5 [95\% CI] & W/L & Holm $p$ & $\Delta$Hit@5 [95\% CI] & $\Delta$Hit@5 [95\% CI] \\
+\midrule
+\sys{}-2 (full, frozen) & 0.835 & -- & -- & -- & -- & -- \\
+\midrule
+no evidence-item term (claim similarity + priors) & 0.786 & 0.049 [0.034, 0.066] & 14/1 & $<$0.001 & 0.078 [0.060, 0.096] & 0.021 [$-$0.005, 0.047] \\
+no state filter (dead files rankable) & 0.811 & 0.024 [0.015, 0.035] & 15/0 & $<$0.001 & 0.029 [0.016, 0.043] & 0.031 [0.008, 0.057] \\
+no claim-similarity term & 0.817 & 0.018 [0.011, 0.026] & 14/0 & $<$0.001 & 0.029 [0.019, 0.038] & 0.026 [0.012, 0.042] \\
+no recency prior & 0.825 & 0.010 [0.004, 0.016] & 13/2 & 0.025 & 0.016 [0.008, 0.024] & 0.014 [0.008, 0.022] \\
+no strength weighting & 0.830 & 0.005 [0.000, 0.010] & 11/3 & 0.225 & 0.009 [0.004, 0.014] & 0.006 [$-$0.005, 0.017] \\
+no rename carry-over & 0.831 & 0.004 [0.000, 0.008] & 10/2 & 0.225 & -- & -- \\
+no frequency prior & 0.834 & 0.001 [$-$0.002, 0.004] & 6/6 & 0.668 & 0.003 [$-$0.001, 0.006] & 0.006 [$-$0.001, 0.013] \\
+neither prior & 0.823 & 0.011 [0.005, 0.018] & 11/4 & 0.030 & 0.020 [0.013, 0.028] & 0.016 [0.004, 0.028] \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,1009 @@
+{
+  "task_id": "fastapi_003",
+  "before_commit": "6b53786f626db95a42fd0f66afd360bab161f4b1",
+  "knowledge_cutoff": "2025-12-26T11:37:18Z",
+  "n_claims": 19,
+  "n_leakage_failures": 0,
+  "leakage_failures": [],
+  "claims": [
+    {
+      "claim_id": "fc53f4f86d2e",
+      "statement": "Historical engineering evidence trail for fastapi/dependencies/utils.py",
+      "scope": "fastapi/fastapi",
+      "state": "CONTESTED",
+      "trust": 0.0,
+      "evidence_count": 20,
+      "created_at": "2026-09-22T19:08:40.776248+00:00",
+      "updated_at": "2025-12-21T17:44:10+01:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/dependencies/utils.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Reduce internal cyclic recursion in dependencies, from 2 functions calling each other to 1 calling itself (#14256)",
+          "timestamp": "2025-10-30T20:35:04+01:00",
+          "source_id": "dcfb8b9dda7b8117141b89e84527b48f978e0b31",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix security schemes in OpenAPI when added at the top level app (#14266)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-10-31T19:34:30+01:00",
+          "source_id": "496de1816aa01a59c75a7dcd27fd3c6245fa255a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for dependencies with scopes, support `scope=\"request\"` for dependencies with `yield` that exit before the response is sent (#14262)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-11-03T11:12:49+01:00",
+          "source_id": "ac438b99342c859ae0e10f7064021125bd247bf5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `Depends(func, scope='function')` for top level (parameterless) dependencies (#14301)",
+          "timestamp": "2025-11-08T22:43:30+01:00",
+          "source_id": "282f372eda661c865fa1208bd0371bf47d190b2a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Make the result of `Depends()` and `Security()` hashable, as a workaround for other tools interacting with these internal parts (#14372)",
+          "timestamp": "2025-11-19T17:50:18+01:00",
+          "source_id": "85701631a0241c5f02b4940734a5428f66abe167",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix hierarchical security scope propagation (#5624)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: svlandeg <svlandeg@github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2025-11-30T12:57:01+01:00",
+          "source_id": "378ad688b7e57efb190506b3b36be65eb8ad5e6f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc1b Cache dependencies that don't use scopes and don't have sub-dependencies with scopes (#14419)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-11-30T15:45:49+01:00",
+          "source_id": "7fbd30460f480e90faf321b9158bffb5116000d5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix support for form values with empty strings interpreted as missing (`None` if that's the default), for compatibility with HTML forms (#13537)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-02T05:39:55+01:00",
+          "source_id": "d68c066246c9a70f179ca165614dac19b8c8beeb",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix parsing extra `Form` parameter list (#14303)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-02T05:49:32+01:00",
+          "source_id": "6cf40df24d1d199fd25d034fc87fcae284fc23a2",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix parsing extra non-body parameter list (#14356)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-02T05:57:19+01:00",
+          "source_id": "de5bec637c6af5126382c1e604514964ba9e5093",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix Query\\Header\\Cookie parameter model alias (#14360)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-02T07:24:09+00:00",
+          "source_id": "015b4fae9ce949ce46b285dabce7aa050b370eba",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for wrapped functions (e.g. `@functools.wraps()`) used with forward references (#5077)\n\nCo-authored-by: Yurii Karabas <1998uriyyo@gmail.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-02T18:23:14+01:00",
+          "source_id": "1c1e584abd5cb98920bf22966f7a8b79d3ec64be",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix support for functools wraps and partial combined, for async and regular functions and classes in path operations and dependencies (#14448)\n\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+          "timestamp": "2025-12-04T08:29:28+01:00",
+          "source_id": "bba4d4c95e0de8fc9c99f88c269909d37d64d494",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix evaluating stringified annotations in Python 3.10 (#11355)\n\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>\nCo-authored-by: svlandeg <svlandeg@github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-04T09:18:32+01:00",
+          "source_id": "861598b4e30a7a7297aee803097f77431f799ea5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix OAuth2 scopes in OpenAPI in extra corner cases, parent dependency with scopes, sub-dependency security scheme without scopes (#14459)",
+          "timestamp": "2025-12-04T23:22:01+01:00",
+          "source_id": "0b5fa563cdfb887e4145d8419ae91b6a40905349",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix support for `if TYPE_CHECKING`,  non-evaluated stringified annotations (#14485)",
+          "timestamp": "2025-12-10T13:06:05+01:00",
+          "source_id": "7ba042e069ad424a584a37f1db03887798d9af80",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix parameter aliases (#14371)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-12T15:56:57+01:00",
+          "source_id": "d86c47477e4d91b5e1f07973b3437908558a8b4b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udd0a Add deprecation warnings when using `pydantic.v1` (#14583)",
+          "timestamp": "2025-12-21T17:44:10+01:00",
+          "source_id": "6e42bcd8ce2ade33d94f478310dad20ee84f8f0f",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "8da72361bf3f",
+      "statement": "Historical engineering evidence trail for fastapi/exceptions.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 5,
+      "created_at": "2026-09-22T19:08:42.768535+00:00",
+      "updated_at": "2025-12-17T21:25:59+00:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/exceptions.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Update mypy (#11049)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2024-04-01T21:48:51-05:00",
+          "source_id": "9c80842ceaf86f2ecb68ae7b3be47ea5e622c260",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2795 Migrate internal reference documentation from `typing_extensions.Doc` to `annotated_doc.Doc` (#14222)",
+          "timestamp": "2025-10-23T22:31:35+02:00",
+          "source_id": "d390f2e41fb508de416071d481937bc7be486589",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for dependencies with scopes, support `scope=\"request\"` for dependencies with `yield` that exit before the response is sent (#14262)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-11-03T11:12:49+01:00",
+          "source_id": "ac438b99342c859ae0e10f7064021125bd247bf5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\ud83d\udeb8  Improve tracebacks by adding endpoint metadata (#14306)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-06T12:21:57+00:00",
+          "source_id": "e1117f75505bbdb2d42321a009dbf26c9c2b8b6d",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "85d58f30d365",
+      "statement": "Historical engineering evidence trail for fastapi/openapi/utils.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 11,
+      "created_at": "2026-09-22T19:08:44.781592+00:00",
+      "updated_at": "2025-12-17T21:25:59+00:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/openapi/utils.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2728 Add support for Pydantic's 2.7 new deprecated Field parameter, remove URL from validation errors response (#11461)",
+          "timestamp": "2024-04-18T14:40:57-05:00",
+          "source_id": "27da0d02a786c7a3ad45610516063960806371f9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for Pydantic models for parameters using `Query`, `Cookie`, `Header` (#12199)",
+          "timestamp": "2024-09-17T20:54:10+02:00",
+          "source_id": "55035f440bf852f739e3ccd71b67034016ae9bba",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump ruff to 0.9.4 (#13299)\n\n* \u2b06 Bump ruff from 0.6.4 to 0.9.4\n\nBumps [ruff](https://github.com/astral-sh/ruff) from 0.6.4 to 0.9.4.\n- [Release notes](https://github.com/astral-sh/ruff/releases)\n- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/astral-sh/ruff/compare/0.6.4...0.9.4)\n\n---\nupdated-dependencies:\n- dependency-name: ruff\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* update pre-commit accordingly and make formatting changes\n\n* \ud83c\udfa8 [pre-commit.ci] Auto format from pre-commit.com hooks\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Alejandra <90076947+alejsdev@users.noreply.github.com>\nCo-authored-by: svlandeg <sofie.vanlandeghem@gmail.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-03-06T13:18:57+01:00",
+          "source_id": "8c94e97c89f617ad808d8ca24da6e52a238bcee9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `convert_underscores=False` for header Pydantic models (#13515)",
+          "timestamp": "2025-03-23T21:48:54+01:00",
+          "source_id": "2537d9d1c2517f9e552ca2b076b3b63b1acbc55d",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade Starlette supported version range to >=0.40.0,<0.49.0 (#14077)\n\nCo-authored-by: svlandeg <svlandeg@github.com>",
+          "timestamp": "2025-09-16T19:21:48+02:00",
+          "source_id": "7563579dc882aebfaeaf2bc37bd97fead72740a3",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add OpenAPI `external_docs` parameter to `FastAPI` (#13713)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+          "timestamp": "2025-09-20T19:11:46+02:00",
+          "source_id": "bc5013cd56c1be81aca9b60f43c189c1d05b499a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for `from pydantic.v1 import BaseModel`, mixed Pydantic v1 and v2 models in the same app (#14168)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-10-11T18:45:54+02:00",
+          "source_id": "d34918abf00c93ac592c5d1d1c55650d8c1b92ec",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix OpenAPI security scheme OAuth2 scopes declaration, deduplicate security schemes with different scopes (#14455)",
+          "timestamp": "2025-12-04T13:59:24+01:00",
+          "source_id": "0ec4bafca204c92dca903437e78514246fe14eac",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix OAuth2 scopes in OpenAPI in extra corner cases, parent dependency with scopes, sub-dependency security scheme without scopes (#14459)",
+          "timestamp": "2025-12-04T23:22:01+01:00",
+          "source_id": "0b5fa563cdfb887e4145d8419ae91b6a40905349",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix parameter aliases (#14371)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-12T15:56:57+01:00",
+          "source_id": "d86c47477e4d91b5e1f07973b3437908558a8b4b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "d38fbb9aa53c",
+      "statement": "Historical engineering evidence trail for fastapi/params.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 12,
+      "created_at": "2026-09-22T19:08:46.800588+00:00",
+      "updated_at": "2025-12-20T16:55:38+01:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/params.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2728 Add support for Pydantic's 2.7 new deprecated Field parameter, remove URL from validation errors response (#11461)",
+          "timestamp": "2024-04-18T14:40:57-05:00",
+          "source_id": "27da0d02a786c7a3ad45610516063960806371f9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `allow_inf_nan` option for Param and Body classes (#11867)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\r\nCo-authored-by: svlandeg <svlandeg@github.com>",
+          "timestamp": "2024-08-24T14:27:37-05:00",
+          "source_id": "51b625e127982f626886d467122ef85d5772d1db",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor deciding if `embed` body fields, do not overwrite fields, compute once per router, refactor internals in preparation for Pydantic models in `Form`, `Query` and others (#12117)",
+          "timestamp": "2024-09-05T13:24:36+02:00",
+          "source_id": "aa21814a89853c17c139054a5c51f0bb1ea68a0a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\u270f\ufe0f Fix typo in `fastapi/params.py` (#12143)",
+          "timestamp": "2024-09-06T20:06:20+02:00",
+          "source_id": "b60d36e7533e0ae299cdff0d72b078d1f036ac67",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Update internal checks to support Pydantic 2.10 (#12914)",
+          "timestamp": "2024-11-12T17:10:42+01:00",
+          "source_id": "91a929319c4ccaa4569d55edcc52ae774b685eda",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc7d\ufe0f Ensure compatibility with Pydantic 2.12.0 (#14036)\n\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>\nCo-authored-by: Victorien <65306057+Viicos@users.noreply.github.com>\nCo-authored-by: svlandeg <svlandeg@github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Patrick Arminio <patrick.arminio@gmail.com>",
+          "timestamp": "2025-10-08T10:57:37+02:00",
+          "source_id": "c970d8a735f75249ae7badb036bf0560c6c2d186",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor internals of dependencies, simplify using dataclasses (#14254)",
+          "timestamp": "2025-10-30T05:51:50+01:00",
+          "source_id": "c144f9fbd356e7e378a6b42cff68cf4a4667111a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for dependencies with scopes, support `scope=\"request\"` for dependencies with `yield` that exit before the response is sent (#14262)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-11-03T11:12:49+01:00",
+          "source_id": "ac438b99342c859ae0e10f7064021125bd247bf5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Make the result of `Depends()` and `Security()` hashable, as a workaround for other tools interacting with these internal parts (#14372)",
+          "timestamp": "2025-11-19T17:50:18+01:00",
+          "source_id": "85701631a0241c5f02b4940734a5428f66abe167",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix parameter aliases (#14371)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-12T15:56:57+01:00",
+          "source_id": "d86c47477e4d91b5e1f07973b3437908558a8b4b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "f9c8292b5ed3",
+      "statement": "Historical engineering evidence trail for fastapi/routing.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 20,
+      "created_at": "2026-09-22T19:08:48.714298+00:00",
+      "updated_at": "2025-12-21T17:44:10+01:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/routing.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc1b Ensure that `app.include_router` merges nested lifespans (#9630)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\r\nCo-authored-by: Marcelo Trylesinski <marcelotryle@gmail.com>\r\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2024-08-24T14:09:52-05:00",
+          "source_id": "3a4ac2467594d0ccad92ecfb7f7f10ffa5d1d992",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor and simplify internal data from `solve_dependencies()` using dataclasses (#12100)",
+          "timestamp": "2024-08-31T22:52:06+02:00",
+          "source_id": "5b7fa3900e3156dcb93f496516740bc06903d7d8",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Rename internal `create_response_field()` to `create_model_field()` as it's used for more than response models (#12103)",
+          "timestamp": "2024-09-01T01:46:03+02:00",
+          "source_id": "d08b95ea57fa5740c8c04da554f2b6e259f4dea4",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor deciding if `embed` body fields, do not overwrite fields, compute once per router, refactor internals in preparation for Pydantic models in `Form`, `Query` and others (#12117)",
+          "timestamp": "2024-09-05T13:24:36+02:00",
+          "source_id": "aa21814a89853c17c139054a5c51f0bb1ea68a0a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix openapi generation with responses kwarg (#10895)\n\nCo-authored-by: flxdot <felix.fanghaenel@nitrex.com>\r\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>\r\nCo-authored-by: S\u0142awek Ehlert <slawomir.ehlert@gmail.com>",
+          "timestamp": "2024-10-12T11:44:57+02:00",
+          "source_id": "e049fc4ea15a7b844326efa545a7e370713f6612",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump ruff to 0.9.4 (#13299)\n\n* \u2b06 Bump ruff from 0.6.4 to 0.9.4\n\nBumps [ruff](https://github.com/astral-sh/ruff) from 0.6.4 to 0.9.4.\n- [Release notes](https://github.com/astral-sh/ruff/releases)\n- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/astral-sh/ruff/compare/0.6.4...0.9.4)\n\n---\nupdated-dependencies:\n- dependency-name: ruff\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* update pre-commit accordingly and make formatting changes\n\n* \ud83c\udfa8 [pre-commit.ci] Auto format from pre-commit.com hooks\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Alejandra <90076947+alejsdev@users.noreply.github.com>\nCo-authored-by: svlandeg <sofie.vanlandeghem@gmail.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-03-06T13:18:57+01:00",
+          "source_id": "8c94e97c89f617ad808d8ca24da6e52a238bcee9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udcdd Update exclude-parameters-from-openapi documentation links (#13600)",
+          "timestamp": "2025-06-17T10:05:34+02:00",
+          "source_id": "97fdbdd0d8b3e24b3d850865033f6746ee13f82c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade Starlette supported version range to `>=0.40.0,<0.48.0` (#13884)",
+          "timestamp": "2025-07-11T18:15:27+02:00",
+          "source_id": "cad6880fd97d6f25d3f05025c88230285386e7f9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Update mypy to 1.14.1 (#12970)\n\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>\nCo-authored-by: svlandeg <svlandeg@github.com>\nCo-authored-by: svlandeg <sofie.vanlandeghem@gmail.com>",
+          "timestamp": "2025-09-20T14:05:51+02:00",
+          "source_id": "a95e91e46e230db27a75f39639a1f255a8b177ae",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix `inspect.getcoroutinefunction()` can break testing with `unittest.mock.patch()` (#14022)",
+          "timestamp": "2025-09-20T18:30:34+02:00",
+          "source_id": "c831cdbde22e2dbaae8bcac4544a5556a5a04b5e",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix support for `StreamingResponse`s with dependencies with `yield` or `UploadFile`s, close after the response is done (#14099)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-09-29T05:29:38+02:00",
+          "source_id": "e329d78f866a12893699f786f1209a666e1688e3",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for `from pydantic.v1 import BaseModel`, mixed Pydantic v1 and v2 models in the same app (#14168)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-10-11T18:45:54+02:00",
+          "source_id": "d34918abf00c93ac592c5d1d1c55650d8c1b92ec",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2795 Migrate internal reference documentation from `typing_extensions.Doc` to `annotated_doc.Doc` (#14222)",
+          "timestamp": "2025-10-23T22:31:35+02:00",
+          "source_id": "d390f2e41fb508de416071d481937bc7be486589",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for dependencies with scopes, support `scope=\"request\"` for dependencies with `yield` that exit before the response is sent (#14262)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-11-03T11:12:49+01:00",
+          "source_id": "ac438b99342c859ae0e10f7064021125bd247bf5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\u267b\ufe0f Refactor internals, update `is_coroutine` check to reuse internal supported variants (unwrap, check class) (#14434)",
+          "timestamp": "2025-12-02T13:43:31+00:00",
+          "source_id": "247ef32e790ef296d8febc3fbc639849ff24b1a5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\ud83d\udd25 Remove dangling extra condiitonal no longer needed (#14435)",
+          "timestamp": "2025-12-02T16:48:46+00:00",
+          "source_id": "a79ae3d66fb093adfe9f8d15a53af74b49947562",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "REFINES",
+          "content": "\ud83d\udeb8  Improve tracebacks by adding endpoint metadata (#14306)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-12-06T12:21:57+00:00",
+          "source_id": "e1117f75505bbdb2d42321a009dbf26c9c2b8b6d",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udd0a Add deprecation warnings when using `pydantic.v1` (#14583)",
+          "timestamp": "2025-12-21T17:44:10+01:00",
+          "source_id": "6e42bcd8ce2ade33d94f478310dad20ee84f8f0f",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "889c168b283c",
+      "statement": "Historical engineering evidence trail for fastapi/temp_pydantic_v1_params.py",
+      "scope": "fastapi/fastapi",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:08:50.633682+00:00",
+      "updated_at": "2026-09-22T19:08:50.633682+00:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/temp_pydantic_v1_params.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "3952cbe64625",
+      "statement": "Historical engineering evidence trail for fastapi/utils.py",
+      "scope": "fastapi/fastapi",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 11,
+      "created_at": "2026-09-22T19:08:52.510507+00:00",
+      "updated_at": "2025-12-20T16:55:38+01:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/utils.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Simplify string format with f-strings in `fastapi/utils.py` (#10576)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2024-01-13T15:31:38+01:00",
+          "source_id": "de0126d145c920c992c605538e63fe0e46b508d5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728  Include HTTP 205 in status codes with no body (#10969)",
+          "timestamp": "2024-01-15T11:32:16+01:00",
+          "source_id": "dcc952d6990c507956669e6fc5cddba0530c79d1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2728 Add support for Pydantic's 2.7 new deprecated Field parameter, remove URL from validation errors response (#11461)",
+          "timestamp": "2024-04-18T14:40:57-05:00",
+          "source_id": "27da0d02a786c7a3ad45610516063960806371f9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade version of Ruff and reformat (#12032)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2024-08-16T23:13:50-05:00",
+          "source_id": "3a3ad5d66d0cae4be95675b93d8ee8b10c3ce212",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Rename internal `create_response_field()` to `create_model_field()` as it's used for more than response models (#12103)",
+          "timestamp": "2024-09-01T01:46:03+02:00",
+          "source_id": "d08b95ea57fa5740c8c04da554f2b6e259f4dea4",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\u26a1\ufe0f Fix `default_factory` for response model field with Pydantic V1 (#9704)\n\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+          "timestamp": "2025-09-20T20:51:40+02:00",
+          "source_id": "f1e6f978ce10a6f9b4c668350a79462e9ac330a8",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for `from pydantic.v1 import BaseModel`, mixed Pydantic v1 and v2 models in the same app (#14168)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2025-10-11T18:45:54+02:00",
+          "source_id": "d34918abf00c93ac592c5d1d1c55650d8c1b92ec",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix internal Pydantic v1 compatibility (warnings) for Python 3.14 and Pydantic 2.12.1 (#14186)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2025-10-20T13:26:49+02:00",
+          "source_id": "d8c691f7f09989fa51b331b8a7a1ecfe93815a2f",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix unformatted `{type_}` in FastAPIError (#14416)\n\nCo-authored-by: Alex Colby <alex.colby@intellisense.io>",
+          "timestamp": "2025-12-02T06:01:11+01:00",
+          "source_id": "cb3792d39e1004947419a2a06b5764894730892d",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "ed4e837f65d7",
+      "statement": "Historical engineering evidence trail for tests/benchmarks/test_general_performance.py",
+      "scope": "fastapi/tests",
+      "state": "CORROBORATED",
+      "trust": 1.0,
+      "evidence_count": 2,
+      "created_at": "2026-09-22T19:08:54.625544+00:00",
+      "updated_at": "2025-12-21T17:44:10+01:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/benchmarks/test_general_performance.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Add performance tests with CodSpeed (#14558)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-18T14:24:09+01:00",
+          "source_id": "caee1d3123113808f6f3fbfb78a5ff809e9e085b",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udd0a Add deprecation warnings when using `pydantic.v1` (#14583)",
+          "timestamp": "2025-12-21T17:44:10+01:00",
+          "source_id": "6e42bcd8ce2ade33d94f478310dad20ee84f8f0f",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "563477e5e439",
+      "statement": "Historical engineering evidence trail for tests/test_compat_params_v1.py",
+      "scope": "fastapi/tests",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:08:56.549144+00:00",
+      "updated_at": "2026-09-22T19:08:56.549144+00:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/test_compat_params_v1.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "7cd54ccfbd04",
+      "statement": "Historical engineering evidence trail for tests/test_pydantic_v1_deprecation_warnings.py",
+      "scope": "fastapi/tests",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:08:58.447024+00:00",
+      "updated_at": "2026-09-22T19:08:58.447024+00:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/test_pydantic_v1_deprecation_warnings.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "3df3219a8f72",
+      "statement": "Historical engineering evidence trail for tests/test_regex_deprecated_body.py",
+      "scope": "fastapi/tests",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 3,
+      "created_at": "2026-09-22T19:09:00.479838+00:00",
+      "updated_at": "2025-12-17T21:25:59+00:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/test_regex_deprecated_body.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade configuration for Ruff v0.2.0 (#11075)",
+          "timestamp": "2024-03-26T11:56:53-05:00",
+          "source_id": "5ccc869fee663b264a68cd33990861c8a2f6eb47",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2728 Add support for Pydantic's 2.7 new deprecated Field parameter, remove URL from validation errors response (#11461)",
+          "timestamp": "2024-04-18T14:40:57-05:00",
+          "source_id": "27da0d02a786c7a3ad45610516063960806371f9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "6b571d747636",
+      "statement": "Historical engineering evidence trail for tests/test_regex_deprecated_params.py",
+      "scope": "fastapi/tests",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 3,
+      "created_at": "2026-09-22T19:09:02.531662+00:00",
+      "updated_at": "2025-12-17T21:25:59+00:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/test_regex_deprecated_params.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade configuration for Ruff v0.2.0 (#11075)",
+          "timestamp": "2024-03-26T11:56:53-05:00",
+          "source_id": "5ccc869fee663b264a68cd33990861c8a2f6eb47",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2728 Add support for Pydantic's 2.7 new deprecated Field parameter, remove URL from validation errors response (#11461)",
+          "timestamp": "2024-04-18T14:40:57-05:00",
+          "source_id": "27da0d02a786c7a3ad45610516063960806371f9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u267b\ufe0f Upgrade internal syntax to Python 3.9+ \ud83c\udf89 (#14564)",
+          "timestamp": "2025-12-17T21:25:59+00:00",
+          "source_id": "1c4fc96c917a1097149b6e1ff8e36a62f8d994b1",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "c9e4002a020a",
+      "statement": "Historical engineering evidence trail for tests/test_schema_extra_examples.py",
+      "scope": "fastapi/tests",
+      "state": "CORROBORATED",
+      "trust": 0.815,
+      "evidence_count": 1,
+      "created_at": "2026-09-22T19:09:04.581789+00:00",
+      "updated_at": "2025-12-20T16:55:38+01:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/test_schema_extra_examples.py"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's `pydantic.v1` (#14575)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-20T16:55:38+01:00",
+          "source_id": "e2cd8a420110132bd08893d743fdb617f59fd15b",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "d36472b6c043",
+      "statement": "Historical engineering evidence trail for .../test_pydantic_v1_in_v2/test_tutorial002.py",
+      "scope": "fastapi/...",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:06.529767+00:00",
+      "updated_at": "2026-09-22T19:09:06.529767+00:00",
+      "superseded_by": null,
+      "tags": [
+        ".../test_pydantic_v1_in_v2/test_tutorial002.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "061a78d7126e",
+      "statement": "Historical engineering evidence trail for .../test_pydantic_v1_in_v2/test_tutorial003.py",
+      "scope": "fastapi/...",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:08.359248+00:00",
+      "updated_at": "2026-09-22T19:09:08.359248+00:00",
+      "superseded_by": null,
+      "tags": [
+        ".../test_pydantic_v1_in_v2/test_tutorial003.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "6a5d40cf91a9",
+      "statement": "Historical engineering evidence trail for .../test_pydantic_v1_in_v2/test_tutorial004.py",
+      "scope": "fastapi/...",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:10.194742+00:00",
+      "updated_at": "2026-09-22T19:09:10.194742+00:00",
+      "superseded_by": null,
+      "tags": [
+        ".../test_pydantic_v1_in_v2/test_tutorial004.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "f8720f55d924",
+      "statement": "Historical engineering evidence trail for .../test_tutorial004.py",
+      "scope": "fastapi/...",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:11.913672+00:00",
+      "updated_at": "2026-09-22T19:09:11.913672+00:00",
+      "superseded_by": null,
+      "tags": [
+        ".../test_tutorial004.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "96a2a6f8f552",
+      "statement": "Historical engineering evidence trail for .../test_tutorial002_pv1.py",
+      "scope": "fastapi/...",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:13.758767+00:00",
+      "updated_at": "2026-09-22T19:09:13.758767+00:00",
+      "superseded_by": null,
+      "tags": [
+        ".../test_tutorial002_pv1.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "b8418e08b226",
+      "statement": "Historical engineering evidence trail for .../test_tutorial001_pv1.py",
+      "scope": "fastapi/...",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:15.644445+00:00",
+      "updated_at": "2026-09-22T19:09:15.644445+00:00",
+      "superseded_by": null,
+      "tags": [
+        ".../test_tutorial001_pv1.py"
+      ],
+      "evidence": []
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "task_id": "fastapi_001",
+  "before_commit": "2e62fb151338c39c1f122d13fe6ad255b8ce1ff2",
+  "knowledge_cutoff": "2026-02-22T17:18:26+01:00",
+  "n_claims": 8,
+  "n_leakage_failures": 0,
+  "leakage_failures": [],
+  "claims": [
+    {
+      "claim_id": "a6e9336b9d75",
+      "statement": "Historical engineering evidence trail for docs/en/docs/reference/responses.md",
+      "scope": "fastapi/docs",
+      "state": "CORROBORATED",
+      "trust": 1.0,
+      "evidence_count": 2,
+      "created_at": "2026-09-22T19:08:21.759812+00:00",
+      "updated_at": "2026-02-04T13:41:54+01:00",
+      "superseded_by": null,
+      "tags": [
+        "docs/en/docs/reference/responses.md"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udcdd Tweak docs and translations links, typos, format (#11389)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2024-04-18T14:53:19-05:00",
+          "source_id": "ebc8ac72959bc76d05e3fd15c97d2ca7c3104234",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udcdd Add links to related sections of docs to docstrings (#14776)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-04T13:41:54+01:00",
+          "source_id": "3a41403ccda1a727135fec91dea118ad8f2cf50a",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "28e8718376f7",
+      "statement": "Historical engineering evidence trail for fastapi/responses.py",
+      "scope": "fastapi/fastapi",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:08:23.973864+00:00",
+      "updated_at": "2026-09-22T19:08:23.973864+00:00",
+      "superseded_by": null,
+      "tags": [
+        "fastapi/responses.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "96586cc3ae59",
+      "statement": "Historical engineering evidence trail for pyproject.toml",
+      "scope": "fastapi/pyproject.toml",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 20,
+      "created_at": "2026-09-22T19:08:26.039423+00:00",
+      "updated_at": "2026-02-21T18:22:54+01:00",
+      "superseded_by": null,
+      "tags": [
+        "pyproject.toml"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2705 Add missing tests for code examples (#14569)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Nils-Hero Lindemann <nilsherolindemann@proton.me>",
+          "timestamp": "2025-12-26T11:43:02+01:00",
+          "source_id": "3063ada72f4cd493393e1d8f13bb6498f8d5cb93",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for `pydantic.v1` (#14609)",
+          "timestamp": "2025-12-27T13:54:56+01:00",
+          "source_id": "e3006305518a56ea35f62a31748ad26fe4356fcc",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2b06\ufe0f  Migrate to uv (#14676)",
+          "timestamp": "2026-01-10T23:02:57+01:00",
+          "source_id": "b4ba7f46522352cf7ae7c74a9030a35679da3491",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump typer from 0.16.0 to 0.21.1 (#14799)\n\nBumps [typer](https://github.com/fastapi/typer) from 0.16.0 to 0.21.1.\n- [Release notes](https://github.com/fastapi/typer/releases)\n- [Changelog](https://github.com/fastapi/typer/blob/master/docs/release-notes.md)\n- [Commits](https://github.com/fastapi/typer/compare/0.16.0...0.21.1)\n\n---\nupdated-dependencies:\n- dependency-name: typer\n  dependency-version: 0.21.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:54:49+01:00",
+          "source_id": "b833e53ade85dcb330145ac6e95a5b7c74a78fcd",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump gitpython from 3.1.45 to 3.1.46 (#14800)\n\nBumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.45 to 3.1.46.\n- [Release notes](https://github.com/gitpython-developers/GitPython/releases)\n- [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)\n- [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.45...3.1.46)\n\n---\nupdated-dependencies:\n- dependency-name: gitpython\n  dependency-version: 3.1.46\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:56:33+01:00",
+          "source_id": "a0e34c747340b5b731a363f6b683fa0d0062ca49",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump mkdocs-macros-plugin from 1.4.1 to 1.5.0 (#14801)\n\nBumps [mkdocs-macros-plugin](https://github.com/fralau/mkdocs_macros_plugin) from 1.4.1 to 1.5.0.\n- [Release notes](https://github.com/fralau/mkdocs_macros_plugin/releases)\n- [Changelog](https://github.com/fralau/mkdocs-macros-plugin/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/fralau/mkdocs_macros_plugin/compare/v1.4.1...v1.5.0)\n\n---\nupdated-dependencies:\n- dependency-name: mkdocs-macros-plugin\n  dependency-version: 1.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:57:22+01:00",
+          "source_id": "f2487ce88c4ae8f7e64668409770427b245c3a60",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump sqlmodel from 0.0.27 to 0.0.31 (#14802)\n\nBumps [sqlmodel](https://github.com/fastapi/sqlmodel) from 0.0.27 to 0.0.31.\n- [Release notes](https://github.com/fastapi/sqlmodel/releases)\n- [Changelog](https://github.com/fastapi/sqlmodel/blob/main/docs/release-notes.md)\n- [Commits](https://github.com/fastapi/sqlmodel/compare/0.0.27...0.0.31)\n\n---\nupdated-dependencies:\n- dependency-name: sqlmodel\n  dependency-version: 0.0.31\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:57:43+01:00",
+          "source_id": "5c3f0307ae475fd0ceeb47aaa2404119f2b6da8a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump ruff from 0.14.3 to 0.14.14 (#14798)\n\nBumps [ruff](https://github.com/astral-sh/ruff) from 0.14.3 to 0.14.14.\n- [Release notes](https://github.com/astral-sh/ruff/releases)\n- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/astral-sh/ruff/compare/0.14.3...0.14.14)\n\n---\nupdated-dependencies:\n- dependency-name: ruff\n  dependency-version: 0.14.14\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T17:34:26+01:00",
+          "source_id": "ec07e62e1c3c054cd3fa0608708103f2acfc3a03",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\ud83d\udcdd Use `WSGIMiddleware` from `a2wsgi` instead of deprecated `fastapi.middleware.wsgi.WSGIMiddleware` (#14756)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-04T12:54:23+01:00",
+          "source_id": "dc3278654f13614d255edca66954326966f6620d",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for PEP695 `TypeAliasType` (#13920)\n\nCo-authored-by: lokidev <torsten.zielke@protonmail.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2026-02-05T18:34:34+00:00",
+          "source_id": "97145588f5442aa7c3830173813d5d1a2c893521",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Run tests with lower bound uv sync, upgrade `fastapi[all]` minimum dependencies: `ujson >=5.8.0`, `orjson >=3.9.3` (#14846)",
+          "timestamp": "2026-02-06T14:45:18+01:00",
+          "source_id": "3b8b310eda78d075ab8dd919bc17a9dce1c21f41",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade Starlette supported version range to `starlette>=0.40.0,<1.0.0` (#14853)",
+          "timestamp": "2026-02-06T16:37:37+00:00",
+          "source_id": "f6cc650a127070ff427ef4d7b4666d304b1cc27e",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade development dependencies (#14854)",
+          "timestamp": "2026-02-06T17:18:30+00:00",
+          "source_id": "5a31b37cc7f12d006d7daebdc82b623e25b3ed2c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u267b\ufe0f Update build setup for `fastapi-slim`, deprecate it, and make it only depend on `fastapi` (#14894)",
+          "timestamp": "2026-02-11T12:33:49+00:00",
+          "source_id": "ffb8965260c71657f26644673f218b99b1315cc7",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Python 3.9 (#14897)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-11T19:32:12+01:00",
+          "source_id": "ad4e8e006016e088dbccdb73305a58a1338b1ad9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udcdd Update source examples and docs from Python 3.9 to 3.10 (#14900)",
+          "timestamp": "2026-02-12T14:19:43+01:00",
+          "source_id": "c9e2277d8b3b0feead4bdad97fca7cf05c9263fd",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\ud83d\udc1b Fix JSON Schema for files, use `contentMediaType` instead of `format: binary` (#14953)",
+          "timestamp": "2026-02-21T14:01:31+01:00",
+          "source_id": "e8b98d21871f64234520c1e770f39e6bfea3b0d5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\ud83d\udd27 Update pyproject.toml, remove unneeded lines (#14956)",
+          "timestamp": "2026-02-21T16:16:03+00:00",
+          "source_id": "f55ab7e020701de7b5e467dad9bafcf1aeab30c4",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for `fastapi-slim`, no more versions will be released, use only `\"fastapi[standard]\"` or `fastapi` (#14957)",
+          "timestamp": "2026-02-21T16:26:38+00:00",
+          "source_id": "083b6ebe9efa76cdee3fe3f74ea686a2ea860f51",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade pytest (#14959)",
+          "timestamp": "2026-02-21T18:22:54+01:00",
+          "source_id": "4ab8138554ed830ba543e57e810fe47f22441e3a",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "a9c78f4ea890",
+      "statement": "Historical engineering evidence trail for tests/test_deprecated_responses.py",
+      "scope": "fastapi/tests",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:08:28.098697+00:00",
+      "updated_at": "2026-09-22T19:08:28.098697+00:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/test_deprecated_responses.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "ba4c89b6b32a",
+      "statement": "Historical engineering evidence trail for tests/test_orjson_response_class.py",
+      "scope": "fastapi/tests",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:08:30.212637+00:00",
+      "updated_at": "2026-09-22T19:08:30.212637+00:00",
+      "superseded_by": null,
+      "tags": [
+        "tests/test_orjson_response_class.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "85b4a4c2d9ac",
+      "statement": "Historical engineering evidence trail for .../test_custom_response/test_tutorial001.py",
+      "scope": "fastapi/...",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:08:32.178654+00:00",
+      "updated_at": "2026-09-22T19:08:32.178654+00:00",
+      "superseded_by": null,
+      "tags": [
+        ".../test_custom_response/test_tutorial001.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "11d46f80a793",
+      "statement": "Historical engineering evidence trail for .../test_custom_response/test_tutorial001b.py",
+      "scope": "fastapi/...",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:08:34.228809+00:00",
+      "updated_at": "2026-09-22T19:08:34.228809+00:00",
+      "superseded_by": null,
+      "tags": [
+        ".../test_custom_response/test_tutorial001b.py"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "dd24e2dd77a6",
+      "statement": "Historical engineering evidence trail for uv.lock",
+      "scope": "fastapi/uv.lock",
+      "state": "SUPERSEDED",
+      "trust": 1.0,
+      "evidence_count": 16,
+      "created_at": "2026-09-22T19:08:36.455449+00:00",
+      "updated_at": "2026-02-21T18:22:54+01:00",
+      "superseded_by": null,
+      "tags": [
+        "uv.lock"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\u2b06\ufe0f  Migrate to uv (#14676)",
+          "timestamp": "2026-01-10T23:02:57+01:00",
+          "source_id": "b4ba7f46522352cf7ae7c74a9030a35679da3491",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump typer from 0.16.0 to 0.21.1 (#14799)\n\nBumps [typer](https://github.com/fastapi/typer) from 0.16.0 to 0.21.1.\n- [Release notes](https://github.com/fastapi/typer/releases)\n- [Changelog](https://github.com/fastapi/typer/blob/master/docs/release-notes.md)\n- [Commits](https://github.com/fastapi/typer/compare/0.16.0...0.21.1)\n\n---\nupdated-dependencies:\n- dependency-name: typer\n  dependency-version: 0.21.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:54:49+01:00",
+          "source_id": "b833e53ade85dcb330145ac6e95a5b7c74a78fcd",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump gitpython from 3.1.45 to 3.1.46 (#14800)\n\nBumps [gitpython](https://github.com/gitpython-developers/GitPython) from 3.1.45 to 3.1.46.\n- [Release notes](https://github.com/gitpython-developers/GitPython/releases)\n- [Changelog](https://github.com/gitpython-developers/GitPython/blob/main/CHANGES)\n- [Commits](https://github.com/gitpython-developers/GitPython/compare/3.1.45...3.1.46)\n\n---\nupdated-dependencies:\n- dependency-name: gitpython\n  dependency-version: 3.1.46\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:56:33+01:00",
+          "source_id": "a0e34c747340b5b731a363f6b683fa0d0062ca49",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump mkdocs-macros-plugin from 1.4.1 to 1.5.0 (#14801)\n\nBumps [mkdocs-macros-plugin](https://github.com/fralau/mkdocs_macros_plugin) from 1.4.1 to 1.5.0.\n- [Release notes](https://github.com/fralau/mkdocs_macros_plugin/releases)\n- [Changelog](https://github.com/fralau/mkdocs-macros-plugin/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/fralau/mkdocs_macros_plugin/compare/v1.4.1...v1.5.0)\n\n---\nupdated-dependencies:\n- dependency-name: mkdocs-macros-plugin\n  dependency-version: 1.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:57:22+01:00",
+          "source_id": "f2487ce88c4ae8f7e64668409770427b245c3a60",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump sqlmodel from 0.0.27 to 0.0.31 (#14802)\n\nBumps [sqlmodel](https://github.com/fastapi/sqlmodel) from 0.0.27 to 0.0.31.\n- [Release notes](https://github.com/fastapi/sqlmodel/releases)\n- [Changelog](https://github.com/fastapi/sqlmodel/blob/main/docs/release-notes.md)\n- [Commits](https://github.com/fastapi/sqlmodel/compare/0.0.27...0.0.31)\n\n---\nupdated-dependencies:\n- dependency-name: sqlmodel\n  dependency-version: 0.0.31\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:57:43+01:00",
+          "source_id": "5c3f0307ae475fd0ceeb47aaa2404119f2b6da8a",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump pyasn1 from 0.6.1 to 0.6.2 (#14804)\n\nBumps [pyasn1](https://github.com/pyasn1/pyasn1) from 0.6.1 to 0.6.2.\n- [Release notes](https://github.com/pyasn1/pyasn1/releases)\n- [Changelog](https://github.com/pyasn1/pyasn1/blob/main/CHANGES.rst)\n- [Commits](https://github.com/pyasn1/pyasn1/compare/v0.6.1...v0.6.2)\n\n---\nupdated-dependencies:\n- dependency-name: pyasn1\n  dependency-version: 0.6.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T15:09:12+00:00",
+          "source_id": "bc9ad6b1342bd191693942cbcbd0fee954cf1a3e",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump ruff from 0.14.3 to 0.14.14 (#14798)\n\nBumps [ruff](https://github.com/astral-sh/ruff) from 0.14.3 to 0.14.14.\n- [Release notes](https://github.com/astral-sh/ruff/releases)\n- [Changelog](https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/astral-sh/ruff/compare/0.14.3...0.14.14)\n\n---\nupdated-dependencies:\n- dependency-name: ruff\n  dependency-version: 0.14.14\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+          "timestamp": "2026-02-02T17:34:26+01:00",
+          "source_id": "ec07e62e1c3c054cd3fa0608708103f2acfc3a03",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "SUPERSEDES",
+          "content": "\ud83d\udcdd Use `WSGIMiddleware` from `a2wsgi` instead of deprecated `fastapi.middleware.wsgi.WSGIMiddleware` (#14756)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-04T12:54:23+01:00",
+          "source_id": "dc3278654f13614d255edca66954326966f6620d",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2728 Add support for PEP695 `TypeAliasType` (#13920)\n\nCo-authored-by: lokidev <torsten.zielke@protonmail.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+          "timestamp": "2026-02-05T18:34:34+00:00",
+          "source_id": "97145588f5442aa7c3830173813d5d1a2c893521",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udc77 Run tests with lower bound uv sync, upgrade `fastapi[all]` minimum dependencies: `ujson >=5.8.0`, `orjson >=3.9.3` (#14846)",
+          "timestamp": "2026-02-06T14:45:18+01:00",
+          "source_id": "3b8b310eda78d075ab8dd919bc17a9dce1c21f41",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade Starlette supported version range to `starlette>=0.40.0,<1.0.0` (#14853)",
+          "timestamp": "2026-02-06T16:37:37+00:00",
+          "source_id": "f6cc650a127070ff427ef4d7b4666d304b1cc27e",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade development dependencies (#14854)",
+          "timestamp": "2026-02-06T17:18:30+00:00",
+          "source_id": "5a31b37cc7f12d006d7daebdc82b623e25b3ed2c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2796 Drop support for Python 3.9 (#14897)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-11T19:32:12+01:00",
+          "source_id": "ad4e8e006016e088dbccdb73305a58a1338b1ad9",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump pillow from 12.1.0 to 12.1.1 (#14899)\n\nBumps [pillow](https://github.com/python-pillow/Pillow) from 12.1.0 to 12.1.1.\n- [Release notes](https://github.com/python-pillow/Pillow/releases)\n- [Changelog](https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst)\n- [Commits](https://github.com/python-pillow/Pillow/compare/12.1.0...12.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: pillow\n  dependency-version: 12.1.1\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-02-13T07:56:30+01:00",
+          "source_id": "db328270aaf74bc512dca9e02dc463fab92ccd97",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06 Bump cryptography from 46.0.4 to 46.0.5 (#14892)\n\nBumps [cryptography](https://github.com/pyca/cryptography) from 46.0.4 to 46.0.5.\n- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)\n- [Commits](https://github.com/pyca/cryptography/compare/46.0.4...46.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: cryptography\n  dependency-version: 46.0.5\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+          "timestamp": "2026-02-13T08:04:40+01:00",
+          "source_id": "b93c964d7fc6ab44015e9a0da4af98c101417a83",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\u2b06\ufe0f Upgrade pytest (#14959)",
+          "timestamp": "2026-02-21T18:22:54+01:00",
+          "source_id": "4ab8138554ed830ba543e57e810fe47f22441e3a",
+          "strength": 1.0
+        }
+      ]
+    }
+  ]
+}

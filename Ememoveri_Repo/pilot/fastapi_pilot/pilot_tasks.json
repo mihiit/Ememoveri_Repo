@@ -1,0 +1,162 @@
+[
+  {
+    "task_id": "fastapi_001",
+    "repo": "fastapi",
+    "before_commit": "2e62fb151338c39c1f122d13fe6ad255b8ce1ff2",
+    "before_commit_timestamp": "2026-02-22T17:18:26+01:00",
+    "after_commit": "48e983573232eea970fb4e0261818d4ab9a481b2",
+    "after_commit_timestamp": "2026-02-22T17:34:59+01:00",
+    "category": "DEPRECATION",
+    "note": "deprecate ORJSONResponse/UJSONResponse",
+    "changed_files": [
+      "docs/en/docs/reference/responses.md",
+      "fastapi/responses.py",
+      "pyproject.toml",
+      "tests/test_deprecated_responses.py",
+      "tests/test_orjson_response_class.py",
+      ".../test_custom_response/test_tutorial001.py",
+      ".../test_custom_response/test_tutorial001b.py",
+      "uv.lock"
+    ],
+    "commit_message_first_line": "\ud83d\uddd1\ufe0f Deprecate `ORJSONResponse` and `UJSONResponse` (#14964)"
+  },
+  {
+    "task_id": "fastapi_002",
+    "repo": "fastapi",
+    "before_commit": "91dba4484dbdaa67178afe633e1ddf7e0ee3f94a",
+    "before_commit_timestamp": "2026-05-28T10:49:01Z",
+    "after_commit": "1990ecb446d4db044e8f2be26758aa42b2c62fa8",
+    "after_commit_timestamp": "2026-05-30T19:17:33+02:00",
+    "category": "SUPERSESSION",
+    "note": "remove slim package stub already deprecated",
+    "changed_files": [
+      "fastapi-slim/README.md"
+    ],
+    "commit_message_first_line": "\ud83d\udd25 Remove slim package stub, deprecated for a while (#15649)"
+  },
+  {
+    "task_id": "fastapi_003",
+    "repo": "fastapi",
+    "before_commit": "6b53786f626db95a42fd0f66afd360bab161f4b1",
+    "before_commit_timestamp": "2025-12-26T11:37:18Z",
+    "after_commit": "535b5daa317a9d1d1f9a1058e57650a7beefa861",
+    "after_commit_timestamp": "2025-12-26T12:45:20Z",
+    "category": "REFINEMENT",
+    "note": "add custom FastAPIDeprecationWarning",
+    "changed_files": [
+      "fastapi/dependencies/utils.py",
+      "fastapi/exceptions.py",
+      "fastapi/openapi/utils.py",
+      "fastapi/params.py",
+      "fastapi/routing.py",
+      "fastapi/temp_pydantic_v1_params.py",
+      "fastapi/utils.py",
+      "tests/benchmarks/test_general_performance.py",
+      "tests/test_compat_params_v1.py",
+      "tests/test_pydantic_v1_deprecation_warnings.py",
+      "tests/test_regex_deprecated_body.py",
+      "tests/test_regex_deprecated_params.py",
+      "tests/test_schema_extra_examples.py",
+      ".../test_pydantic_v1_in_v2/test_tutorial002.py",
+      ".../test_pydantic_v1_in_v2/test_tutorial003.py",
+      ".../test_pydantic_v1_in_v2/test_tutorial004.py",
+      ".../test_tutorial004.py",
+      ".../test_tutorial002_pv1.py",
+      ".../test_tutorial001_pv1.py"
+    ],
+    "commit_message_first_line": "\ud83d\udd0a Add a custom `FastAPIDeprecationWarning` (#14605)"
+  },
+  {
+    "task_id": "fastapi_004",
+    "repo": "fastapi",
+    "before_commit": "69d5ebf34d088019b7dfa15729dabe3603e2d16e",
+    "before_commit_timestamp": "2023-08-05T10:40:24+02:00",
+    "after_commit": "bdd991244d4ff1393725996ac15425857e643c6f",
+    "after_commit_timestamp": "2023-08-05T10:41:21+02:00",
+    "category": "REFINEMENT",
+    "note": "fix typo in deprecation warnings",
+    "changed_files": [
+      "fastapi/params.py"
+    ],
+    "commit_message_first_line": "\u270f\ufe0f Fix typo in deprecation warnings in `fastapi/params.py` (#9854)"
+  },
+  {
+    "task_id": "fastapi_005",
+    "repo": "fastapi",
+    "before_commit": "17a29149e4a40dd756f0eb02a9317229e6b3e718",
+    "before_commit_timestamp": "2024-08-29T00:02:01Z",
+    "after_commit": "6e98249c2121959b5253cecc1237ee5438f98758",
+    "after_commit_timestamp": "2024-08-30T18:00:41+02:00",
+    "category": "CONTRADICTION",
+    "note": "fix async test example that was triggering deprecation warning",
+    "changed_files": [
+      "docs/de/docs/advanced/async-tests.md",
+      "docs/em/docs/advanced/async-tests.md",
+      "docs/en/docs/advanced/async-tests.md",
+      "docs/pt/docs/advanced/async-tests.md",
+      "docs_src/async_tests/test_main.py"
+    ],
+    "commit_message_first_line": "\ud83d\udcdd Fix async test example not to trigger DeprecationWarning (#12084)"
+  },
+  {
+    "task_id": "fastapi_006",
+    "repo": "fastapi",
+    "before_commit": "933d4327fbea006ac022a526895fd282a7f752c5",
+    "before_commit_timestamp": "2019-11-24T14:18:03+01:00",
+    "after_commit": "4e50f534591d2a9c286a33e7eef5463b1fd8a1fd",
+    "after_commit_timestamp": "2019-11-24T14:23:33+01:00",
+    "category": "CONTRADICTION",
+    "note": "The function that clones a Pydantic model field (create_cloned_field) passes __validators__ as a duplicate/conflicting keyword argument when calling create_model, causing an error. Fix the duplicate argument.",
+    "changed_files": [
+      "fastapi/utils.py"
+    ],
+    "commit_message_first_line": ":bug: Fixing validator-caused incorrect output key order (#637)"
+  },
+  {
+    "task_id": "fastapi_007",
+    "repo": "fastapi",
+    "before_commit": "96f092179fc6991cb7604d1b2143a9704e1abe65",
+    "before_commit_timestamp": "2019-10-03T18:43:15-05:00",
+    "after_commit": "d5d9a20937396bcb1a62db8d97e4d39e0439761a",
+    "after_commit_timestamp": "2019-10-03T18:57:49-05:00",
+    "category": "CONTRADICTION",
+    "note": "fix incorrect example in docs first steps",
+    "changed_files": [
+      "docs/tutorial/first-steps.md"
+    ],
+    "commit_message_first_line": ":pencil: Fix incorrect example in docs - first steps (#511)"
+  },
+  {
+    "task_id": "fastapi_008",
+    "repo": "fastapi",
+    "before_commit": "f1419322b3a68534af51d2bd4e7c8e6ad03e6607",
+    "before_commit_timestamp": "2020-11-05T21:58:33Z",
+    "after_commit": "074d39fa17152cae218e570f73fe295953d635ff",
+    "after_commit_timestamp": "2020-11-05T23:02:07+01:00",
+    "category": "CONTRADICTION",
+    "note": "fix incorrect Celery URLs in docs",
+    "changed_files": [
+      "docs/en/docs/tutorial/background-tasks.md",
+      "docs/en/docs/tutorial/sql-databases.md"
+    ],
+    "commit_message_first_line": "\u270f Fix incorrect Celery URLs in docs (#2100)"
+  },
+  {
+    "task_id": "fastapi_009",
+    "repo": "fastapi",
+    "before_commit": "ef1c927b0558d414e199a666833942a6fabb3a51",
+    "before_commit_timestamp": "2026-04-23T16:36:15Z",
+    "after_commit": "7815a32f2ed177b8b786a48b3e0712c05b5c644f",
+    "after_commit_timestamp": "2026-04-23T18:40:29+02:00",
+    "category": "VALID_KNOWLEDGE",
+    "note": "update Pydantic v2 code to address deprecations",
+    "changed_files": [
+      "fastapi/_compat/__init__.py",
+      "fastapi/_compat/v2.py",
+      "fastapi/dependencies/utils.py",
+      "fastapi/encoders.py",
+      "tests/test_jsonable_encoder.py"
+    ],
+    "commit_message_first_line": "\u2b06\ufe0f Update Pydantic v2 code to address deprecations (#15101)"
+  }
+]

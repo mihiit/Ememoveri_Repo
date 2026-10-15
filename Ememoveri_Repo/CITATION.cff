@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "EmemoVeri: Evidence-Aware Engineering Memory for Repository-Scoped Coding Agents"
+authors:
+  - name: "Mihit"
+    email: "mihit.nanda.cs27@iilm.edu"
+    affiliation: "IILM University, Greater Noida, India"
+  - family-names: "Tyagi"
+    given-names: "Priyanka"
+    affiliation: "IILM University, Greater Noida, India"
+version: 0.6.5
+date-released: 2026-09-22
+license: MIT
+repository-code: "https://github.com/REPLACE_WITH_YOUR_USERNAME/ememoveri"

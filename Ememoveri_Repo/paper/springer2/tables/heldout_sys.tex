@@ -1,0 +1,13 @@
+\begin{tabular}{lccccc}
+\toprule
+System (frozen) & Hit@1 & Hit@5 & MRR & NDCG@5 & Dead@5 \\
+\midrule
+Recency prior & 0.199 & 0.466 & 0.326 & 0.308 & 0.000 \\
+Popularity prior & 0.145 & 0.414 & 0.275 & 0.249 & 0.000 \\
+Naive memory & 0.286 & 0.518 & 0.395 & 0.376 & 0.349 \\
+Snapshot RAG & 0.353 & 0.603 & 0.469 & 0.447 & 0.000 \\
+\sys{}-D (blueprint) & 0.365 & 0.636 & 0.488 & 0.467 & 0.000 \\
+\sys{}-T (tuned) & 0.401 & 0.693 & 0.531 & 0.516 & 0.000 \\
+Sim+State+Rec+Pop & 0.410 & 0.696 & 0.538 & 0.521 & 0.000 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,15 @@
+{
+ "agg": "max",
+ "strength_exp": 1.0,
+ "dilution_exp": 0.0,
+ "test_bonus": 0.0,
+ "half_life_e": null,
+ "revert_cancel": false,
+ "w_sim": 1.0,
+ "w_ev": 1.0,
+ "l_pop": 0.05,
+ "l_rec": 0.05,
+ "H": 30.0,
+ "evidence_cosine": "None",
+ "__note": "EmemoVeri-2, tuned on the original dev split only"
+}

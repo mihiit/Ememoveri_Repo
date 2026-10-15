@@ -1,0 +1,10 @@
+\begin{tabular}{lcccc}
+\toprule
+Hit@5 difference & task & repo$\times$month blocks & file clusters & Holm $p$ \\
+\midrule
+\sys{}-D $-$ Snapshot RAG & 0.043 [0.000, 0.086] & 0.043 [$-$0.031, 0.110] & 0.043 [$-$0.078, 0.141] & 0.112 \\
+\sys{}-T $-$ Snapshot RAG & 0.111 [0.081, 0.141] & 0.111 [0.078, 0.151] & 0.111 [0.048, 0.166] & $<$0.0001 \\
+\sys{}-T $-$ \sys{}-D & 0.068 [0.036, 0.100] & 0.068 [0.019, 0.135] & 0.068 [0.008, 0.142] & 0.0003 \\
+Sim+State+Rec+Pop $-$ Snapshot RAG & 0.113 [0.082, 0.145] & 0.113 [0.078, 0.154] & 0.113 [0.046, 0.170] & -- \\
+\bottomrule
+\end{tabular}

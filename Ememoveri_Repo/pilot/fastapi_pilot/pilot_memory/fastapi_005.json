@@ -1,0 +1,152 @@
+{
+  "task_id": "fastapi_005",
+  "before_commit": "17a29149e4a40dd756f0eb02a9317229e6b3e718",
+  "knowledge_cutoff": "2024-08-29T00:02:01Z",
+  "n_claims": 5,
+  "n_leakage_failures": 0,
+  "leakage_failures": [],
+  "claims": [
+    {
+      "claim_id": "b90e85baba83",
+      "statement": "Historical engineering evidence trail for docs/de/docs/advanced/async-tests.md",
+      "scope": "fastapi/docs",
+      "state": "CORROBORATED",
+      "trust": 1.0,
+      "evidence_count": 2,
+      "created_at": "2026-09-22T19:09:18.404434+00:00",
+      "updated_at": "2024-08-05T23:48:30-05:00",
+      "superseded_by": null,
+      "tags": [
+        "docs/de/docs/advanced/async-tests.md"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83c\udf10 Add German translation for `docs/de/docs/advanced/async-tests.md` (#10708)",
+          "timestamp": "2024-03-30T15:25:57-05:00",
+          "source_id": "459ace50bca3aa543e2a5c638f9d3cdff9f8bf9c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udd27 Update docs setup with latest configs and plugins (#11953)",
+          "timestamp": "2024-08-05T23:48:30-05:00",
+          "source_id": "0cd844d3877e6ae9e9fce1c99ea68327254e9b6a",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "bc543922eeb4",
+      "statement": "Historical engineering evidence trail for docs/em/docs/advanced/async-tests.md",
+      "scope": "fastapi/docs",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:19.778693+00:00",
+      "updated_at": "2026-09-22T19:09:19.778693+00:00",
+      "superseded_by": null,
+      "tags": [
+        "docs/em/docs/advanced/async-tests.md"
+      ],
+      "evidence": []
+    },
+    {
+      "claim_id": "c5c5f57de87d",
+      "statement": "Historical engineering evidence trail for docs/en/docs/advanced/async-tests.md",
+      "scope": "fastapi/docs",
+      "state": "CORROBORATED",
+      "trust": 1.0,
+      "evidence_count": 4,
+      "created_at": "2026-09-22T19:09:21.358396+00:00",
+      "updated_at": "2024-08-05T23:48:30-05:00",
+      "superseded_by": null,
+      "tags": [
+        "docs/en/docs/advanced/async-tests.md"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udcdd Update references to Requests for tests to HTTPX, and add HTTPX to extras (#5628)",
+          "timestamp": "2022-11-13T16:20:05+01:00",
+          "source_id": "f92f87d379cc5d3c9b3c159d74639411617cb0da",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udcdd Add warning about lifecycle events with `AsyncClient` (#4167)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>\r\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\r\nCo-authored-by: Marcelo Trylesinski <marcelotryle@gmail.com>",
+          "timestamp": "2024-01-09T21:45:52+04:00",
+          "source_id": "6f43539d87406ea0afc52de3c54f352487024f6c",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CONTRADICTS",
+          "content": "\u270f\ufe0f Fix link in `docs/en/docs/advanced/async-tests.md` (#10960)",
+          "timestamp": "2024-01-13T07:07:15-05:00",
+          "source_id": "bc13faa15d379b9bc5e2475992866e8ca66002ee",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udd27 Update docs setup with latest configs and plugins (#11953)",
+          "timestamp": "2024-08-05T23:48:30-05:00",
+          "source_id": "0cd844d3877e6ae9e9fce1c99ea68327254e9b6a",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "1de6566b6eca",
+      "statement": "Historical engineering evidence trail for docs/pt/docs/advanced/async-tests.md",
+      "scope": "fastapi/docs",
+      "state": "CORROBORATED",
+      "trust": 1.0,
+      "evidence_count": 2,
+      "created_at": "2026-09-22T19:09:22.910487+00:00",
+      "updated_at": "2024-08-05T23:48:30-05:00",
+      "superseded_by": null,
+      "tags": [
+        "docs/pt/docs/advanced/async-tests.md"
+      ],
+      "evidence": [
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83c\udf10 Add Portuguese translation for `docs/pt/docs/advanced/async-tests.md` (#11808)",
+          "timestamp": "2024-07-10T22:37:20-05:00",
+          "source_id": "2d916a9c951a17d0414926eacc8bf4b70a90f8c5",
+          "strength": 1.0
+        },
+        {
+          "type": "COMMIT",
+          "relation": "CORROBORATES",
+          "content": "\ud83d\udd27 Update docs setup with latest configs and plugins (#11953)",
+          "timestamp": "2024-08-05T23:48:30-05:00",
+          "source_id": "0cd844d3877e6ae9e9fce1c99ea68327254e9b6a",
+          "strength": 1.0
+        }
+      ]
+    },
+    {
+      "claim_id": "d8bee5898b10",
+      "statement": "Historical engineering evidence trail for docs_src/async_tests/test_main.py",
+      "scope": "fastapi/docs_src",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:24.343457+00:00",
+      "updated_at": "2026-09-22T19:09:24.343457+00:00",
+      "superseded_by": null,
+      "tags": [
+        "docs_src/async_tests/test_main.py"
+      ],
+      "evidence": []
+    }
+  ]
+}

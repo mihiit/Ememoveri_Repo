@@ -1,0 +1,12 @@
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Held-out Python (12)} & \multicolumn{2}{c}{Multi-language (8)} \\
+Contrast & $\Delta$Hit@5 [95\% CI] & W/L & $\Delta$Hit@5 [95\% CI] & W/L \\
+\midrule
+H1: \sys{}-2 $-$ Snapshot RAG & 0.166 [0.144, 0.188] & 12/0 & 0.109 [0.061, 0.158] & 8/0 \\
+H2: \sys{}-2 $-$ original, tuned & 0.076 [0.056, 0.096] & 12/0 & 0.021 [0.006, 0.040] & 7/1 \\
+H3: \sys{}-2 $-$ without evidence weights & 0.006 [$-$0.001, 0.012] & 8/4 & $-$0.003 [$-$0.016, 0.008] & 5/3 \\
+H4: \sys{}-2 $-$ Sim+State+Rec+Pop & 0.072 [0.053, 0.090] & 12/0 & 0.017 [$-$0.004, 0.037] & 5/3 \\
+\sys{}-2 $-$ similar-history + priors & 0.014 [0.004, 0.025] & 10/2 & 0.010 [0.001, 0.018] & 6/1 \\
+\bottomrule
+\end{tabular}

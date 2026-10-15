@@ -1,0 +1,199 @@
+task,category,model,provider,condition,finish_reason,git_apply_ok,error_category,outcome
+fastapi_001,DEPRECATION,openai/gpt-oss-120b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_001,DEPRECATION,openai/gpt-oss-120b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,openai/gpt-oss-120b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_001,DEPRECATION,openai/gpt-oss-120b,groq,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,qwen/qwen3.6-27b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,qwen/qwen3.6-27b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,qwen/qwen3.6-27b,groq,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,qwen/qwen3.6-27b,groq,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,openai/gpt-oss-20b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_001,DEPRECATION,openai/gpt-oss-20b,groq,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_001,DEPRECATION,openai/gpt-oss-20b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_001,DEPRECATION,openai/gpt-oss-20b,groq,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,openai/gpt-oss-120b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,openai/gpt-oss-120b,groq,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,openai/gpt-oss-120b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,openai/gpt-oss-120b,groq,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,qwen/qwen3.6-27b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_002,SUPERSESSION,qwen/qwen3.6-27b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_002,SUPERSESSION,qwen/qwen3.6-27b,groq,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_002,SUPERSESSION,qwen/qwen3.6-27b,groq,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_002,SUPERSESSION,openai/gpt-oss-20b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,openai/gpt-oss-20b,groq,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,openai/gpt-oss-20b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,openai/gpt-oss-20b,groq,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_003,REFINEMENT,openai/gpt-oss-120b,groq,NO_MEMORY,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_003,REFINEMENT,openai/gpt-oss-120b,groq,PLAIN_RAG,stop,False,No patch (model declined),failure
+fastapi_003,REFINEMENT,openai/gpt-oss-120b,groq,NAIVE_MEMORY,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_003,REFINEMENT,openai/gpt-oss-120b,groq,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_003,REFINEMENT,qwen/qwen3.6-27b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_003,REFINEMENT,qwen/qwen3.6-27b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_003,REFINEMENT,qwen/qwen3.6-27b,groq,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_003,REFINEMENT,qwen/qwen3.6-27b,groq,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_003,REFINEMENT,openai/gpt-oss-20b,groq,NO_MEMORY,stop,False,No patch (model declined),failure
+fastapi_003,REFINEMENT,openai/gpt-oss-20b,groq,PLAIN_RAG,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_003,REFINEMENT,openai/gpt-oss-20b,groq,NAIVE_MEMORY,stop,False,No patch (model declined),failure
+fastapi_003,REFINEMENT,openai/gpt-oss-20b,groq,EMEMOVERI,stop,False,No patch (model declined),failure
+fastapi_004,REFINEMENT,openai/gpt-oss-120b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_004,REFINEMENT,openai/gpt-oss-120b,groq,PLAIN_RAG,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_004,REFINEMENT,openai/gpt-oss-120b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_004,REFINEMENT,openai/gpt-oss-120b,groq,EMEMOVERI,stop,False,No patch (model declined),failure
+fastapi_004,REFINEMENT,qwen/qwen3.6-27b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_004,REFINEMENT,qwen/qwen3.6-27b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_004,REFINEMENT,qwen/qwen3.6-27b,groq,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_004,REFINEMENT,qwen/qwen3.6-27b,groq,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_004,REFINEMENT,openai/gpt-oss-20b,groq,NO_MEMORY,stop,False,No patch generated / unparseable,failure
+fastapi_004,REFINEMENT,openai/gpt-oss-20b,groq,PLAIN_RAG,stop,False,No patch generated / unparseable,failure
+fastapi_004,REFINEMENT,openai/gpt-oss-20b,groq,NAIVE_MEMORY,stop,False,No patch generated / unparseable,failure
+fastapi_004,REFINEMENT,openai/gpt-oss-20b,groq,EMEMOVERI,stop,False,No patch (model declined),failure
+fastapi_005,CONTRADICTION,openai/gpt-oss-120b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,openai/gpt-oss-120b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,openai/gpt-oss-120b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_005,CONTRADICTION,openai/gpt-oss-120b,groq,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,qwen/qwen3.6-27b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,qwen/qwen3.6-27b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,qwen/qwen3.6-27b,groq,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,qwen/qwen3.6-27b,groq,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,openai/gpt-oss-20b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,openai/gpt-oss-20b,groq,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_005,CONTRADICTION,openai/gpt-oss-20b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_005,CONTRADICTION,openai/gpt-oss-20b,groq,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_006,CONTRADICTION,openai/gpt-oss-120b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_006,CONTRADICTION,openai/gpt-oss-120b,groq,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_006,CONTRADICTION,openai/gpt-oss-120b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_006,CONTRADICTION,openai/gpt-oss-120b,groq,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_006,CONTRADICTION,qwen/qwen3.6-27b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_006,CONTRADICTION,qwen/qwen3.6-27b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_006,CONTRADICTION,qwen/qwen3.6-27b,groq,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_006,CONTRADICTION,qwen/qwen3.6-27b,groq,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_006,CONTRADICTION,openai/gpt-oss-20b,groq,NO_MEMORY,length,False,No patch generated / unparseable,failure
+fastapi_006,CONTRADICTION,openai/gpt-oss-20b,groq,PLAIN_RAG,length,False,No patch generated / unparseable,failure
+fastapi_006,CONTRADICTION,openai/gpt-oss-20b,groq,NAIVE_MEMORY,length,False,No patch generated / unparseable,failure
+fastapi_006,CONTRADICTION,openai/gpt-oss-20b,groq,EMEMOVERI,length,False,No patch generated / unparseable,failure
+fastapi_007,CONTRADICTION,openai/gpt-oss-120b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_007,CONTRADICTION,openai/gpt-oss-120b,groq,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_007,CONTRADICTION,openai/gpt-oss-120b,groq,NAIVE_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_007,CONTRADICTION,openai/gpt-oss-120b,groq,EMEMOVERI,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_007,CONTRADICTION,qwen/qwen3.6-27b,groq,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_007,CONTRADICTION,qwen/qwen3.6-27b,groq,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,qwen/qwen3.8-27b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_001,DEPRECATION,qwen/qwen3.8-27b,groq,PLAIN_RAG,stop,False,No patch (model declined),failure
+fastapi_001,DEPRECATION,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,stop,False,No patch (model declined),failure
+fastapi_001,DEPRECATION,qwen/qwen3.8-27b,groq,EMEMOVERI,stop,False,No patch (model declined),failure
+fastapi_002,SUPERSESSION,qwen/qwen3.8-27b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,qwen/qwen3.8-27b,groq,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,qwen/qwen3.8-27b,groq,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_003,REFINEMENT,qwen/qwen3.8-27b,groq,NO_MEMORY,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_003,REFINEMENT,qwen/qwen3.8-27b,groq,PLAIN_RAG,stop,False,No patch (model declined),failure
+fastapi_003,REFINEMENT,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,stop,False,No patch (model declined),failure
+fastapi_003,REFINEMENT,qwen/qwen3.8-27b,groq,EMEMOVERI,stop,False,No patch (model declined),failure
+fastapi_004,REFINEMENT,qwen/qwen3.8-27b,groq,NO_MEMORY,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_004,REFINEMENT,qwen/qwen3.8-27b,groq,PLAIN_RAG,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_004,REFINEMENT,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_004,REFINEMENT,qwen/qwen3.8-27b,groq,EMEMOVERI,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_005,CONTRADICTION,qwen/qwen3.8-27b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_005,CONTRADICTION,qwen/qwen3.8-27b,groq,PLAIN_RAG,stop,False,No patch (model declined),failure
+fastapi_005,CONTRADICTION,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,stop,False,No patch (model declined),failure
+fastapi_005,CONTRADICTION,qwen/qwen3.8-27b,groq,EMEMOVERI,stop,False,No patch (model declined),failure
+fastapi_006,CONTRADICTION,qwen/qwen3.8-27b,groq,NO_MEMORY,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_006,CONTRADICTION,qwen/qwen3.8-27b,groq,PLAIN_RAG,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_006,CONTRADICTION,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_006,CONTRADICTION,qwen/qwen3.8-27b,groq,EMEMOVERI,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_007,CONTRADICTION,openai/gpt-oss-20b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_007,CONTRADICTION,openai/gpt-oss-20b,groq,PLAIN_RAG,length,False,No patch generated / unparseable,failure
+fastapi_007,CONTRADICTION,openai/gpt-oss-20b,groq,NAIVE_MEMORY,length,False,Malformed patch -- hunk arithmetic,failure
+fastapi_007,CONTRADICTION,openai/gpt-oss-20b,groq,EMEMOVERI,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_007,CONTRADICTION,qwen/qwen3.8-27b,groq,NO_MEMORY,stop,False,No patch (model declined),failure
+fastapi_007,CONTRADICTION,qwen/qwen3.8-27b,groq,PLAIN_RAG,stop,False,No patch (model declined),failure
+fastapi_007,CONTRADICTION,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,stop,False,No patch (model declined),failure
+fastapi_007,CONTRADICTION,qwen/qwen3.8-27b,groq,EMEMOVERI,stop,False,No patch (model declined),failure
+fastapi_008,CONTRADICTION,openai/gpt-oss-20b,groq,NO_MEMORY,stop,False,No patch generated / unparseable,failure
+fastapi_008,CONTRADICTION,openai/gpt-oss-20b,groq,PLAIN_RAG,length,False,No patch generated / unparseable,failure
+fastapi_008,CONTRADICTION,openai/gpt-oss-20b,groq,NAIVE_MEMORY,stop,False,No patch generated / unparseable,failure
+fastapi_008,CONTRADICTION,openai/gpt-oss-20b,groq,EMEMOVERI,length,False,No patch generated / unparseable,failure
+fastapi_008,CONTRADICTION,qwen/qwen3.8-27b,groq,NO_MEMORY,stop,False,No patch (model declined),failure
+fastapi_008,CONTRADICTION,qwen/qwen3.8-27b,groq,PLAIN_RAG,stop,False,No patch (model declined),failure
+fastapi_008,CONTRADICTION,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,stop,False,No patch (model declined),failure
+fastapi_008,CONTRADICTION,qwen/qwen3.8-27b,groq,EMEMOVERI,stop,False,No patch (model declined),failure
+fastapi_009,VALID_KNOWLEDGE,openai/gpt-oss-20b,groq,NO_MEMORY,length,False,No patch generated / unparseable,failure
+fastapi_009,VALID_KNOWLEDGE,openai/gpt-oss-20b,groq,PLAIN_RAG,length,False,No patch generated / unparseable,failure
+fastapi_009,VALID_KNOWLEDGE,openai/gpt-oss-20b,groq,NAIVE_MEMORY,length,False,No patch generated / unparseable,failure
+fastapi_009,VALID_KNOWLEDGE,openai/gpt-oss-20b,groq,EMEMOVERI,length,False,No patch generated / unparseable,failure
+fastapi_009,VALID_KNOWLEDGE,qwen/qwen3.8-27b,groq,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_009,VALID_KNOWLEDGE,qwen/qwen3.8-27b,groq,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_009,VALID_KNOWLEDGE,qwen/qwen3.8-27b,groq,NAIVE_MEMORY,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_009,VALID_KNOWLEDGE,qwen/qwen3.8-27b,groq,EMEMOVERI,length,True,OK -- applies cleanly,truncated_false_success
+fastapi_001,DEPRECATION,qwen2.5-coder:1.5b,ollama,NO_MEMORY,length,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_001,DEPRECATION,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_001,DEPRECATION,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_001,DEPRECATION,qwen2.5-coder:1.5b,ollama,EMEMOVERI,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_002,SUPERSESSION,qwen2.5-coder:1.5b,ollama,NO_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_002,SUPERSESSION,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_002,SUPERSESSION,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_002,SUPERSESSION,qwen2.5-coder:1.5b,ollama,EMEMOVERI,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_003,REFINEMENT,qwen2.5-coder:1.5b,ollama,NO_MEMORY,length,False,Malformed patch -- hunk arithmetic,failure
+fastapi_003,REFINEMENT,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,length,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_003,REFINEMENT,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,length,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_003,REFINEMENT,qwen2.5-coder:1.5b,ollama,EMEMOVERI,length,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_004,REFINEMENT,qwen2.5-coder:1.5b,ollama,NO_MEMORY,stop,False,Malformed patch -- hunk arithmetic,failure
+fastapi_004,REFINEMENT,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_004,REFINEMENT,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_004,REFINEMENT,qwen2.5-coder:1.5b,ollama,EMEMOVERI,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_005,CONTRADICTION,qwen2.5-coder:1.5b,ollama,NO_MEMORY,stop,False,Malformed patch -- hunk arithmetic,failure
+fastapi_005,CONTRADICTION,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,stop,False,Malformed patch -- hunk arithmetic,failure
+fastapi_005,CONTRADICTION,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,stop,False,Malformed patch -- hunk arithmetic,failure
+fastapi_005,CONTRADICTION,qwen2.5-coder:1.5b,ollama,EMEMOVERI,stop,False,Malformed patch -- hunk arithmetic,failure
+fastapi_006,CONTRADICTION,qwen2.5-coder:1.5b,ollama,NO_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_006,CONTRADICTION,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_006,CONTRADICTION,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_006,CONTRADICTION,qwen2.5-coder:1.5b,ollama,EMEMOVERI,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_007,CONTRADICTION,qwen2.5-coder:1.5b,ollama,NO_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_007,CONTRADICTION,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_007,CONTRADICTION,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_007,CONTRADICTION,qwen2.5-coder:1.5b,ollama,EMEMOVERI,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_008,CONTRADICTION,qwen2.5-coder:1.5b,ollama,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_008,CONTRADICTION,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_008,CONTRADICTION,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_008,CONTRADICTION,qwen2.5-coder:1.5b,ollama,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_009,VALID_KNOWLEDGE,qwen2.5-coder:1.5b,ollama,NO_MEMORY,stop,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_009,VALID_KNOWLEDGE,qwen2.5-coder:1.5b,ollama,PLAIN_RAG,length,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_009,VALID_KNOWLEDGE,qwen2.5-coder:1.5b,ollama,NAIVE_MEMORY,length,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_009,VALID_KNOWLEDGE,qwen2.5-coder:1.5b,ollama,EMEMOVERI,length,False,Malformed patch -- other (content corruption / rejection),failure
+fastapi_001,DEPRECATION,llama3.1:8b,ollama,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,llama3.1:8b,ollama,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,llama3.1:8b,ollama,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_001,DEPRECATION,llama3.1:8b,ollama,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_002,SUPERSESSION,llama3.1:8b,ollama,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,llama3.1:8b,ollama,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,llama3.1:8b,ollama,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_002,SUPERSESSION,llama3.1:8b,ollama,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_003,REFINEMENT,llama3.1:8b,ollama,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_003,REFINEMENT,llama3.1:8b,ollama,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_003,REFINEMENT,llama3.1:8b,ollama,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_003,REFINEMENT,llama3.1:8b,ollama,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_004,REFINEMENT,llama3.1:8b,ollama,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_004,REFINEMENT,llama3.1:8b,ollama,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_004,REFINEMENT,llama3.1:8b,ollama,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_004,REFINEMENT,llama3.1:8b,ollama,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,llama3.1:8b,ollama,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,llama3.1:8b,ollama,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,llama3.1:8b,ollama,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_005,CONTRADICTION,llama3.1:8b,ollama,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_006,CONTRADICTION,llama3.1:8b,ollama,NO_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_006,CONTRADICTION,llama3.1:8b,ollama,PLAIN_RAG,stop,True,OK -- applies cleanly,success
+fastapi_006,CONTRADICTION,llama3.1:8b,ollama,NAIVE_MEMORY,stop,True,OK -- applies cleanly,success
+fastapi_006,CONTRADICTION,llama3.1:8b,ollama,EMEMOVERI,stop,True,OK -- applies cleanly,success
+fastapi_007,CONTRADICTION,llama3.1:8b,ollama,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_007,CONTRADICTION,llama3.1:8b,ollama,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_007,CONTRADICTION,llama3.1:8b,ollama,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_007,CONTRADICTION,llama3.1:8b,ollama,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_008,CONTRADICTION,llama3.1:8b,ollama,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_008,CONTRADICTION,llama3.1:8b,ollama,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_008,CONTRADICTION,llama3.1:8b,ollama,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_008,CONTRADICTION,llama3.1:8b,ollama,EMEMOVERI,API_ERROR,False,API error,infra_failure
+fastapi_009,VALID_KNOWLEDGE,llama3.1:8b,ollama,NO_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_009,VALID_KNOWLEDGE,llama3.1:8b,ollama,PLAIN_RAG,API_ERROR,False,API error,infra_failure
+fastapi_009,VALID_KNOWLEDGE,llama3.1:8b,ollama,NAIVE_MEMORY,API_ERROR,False,API error,infra_failure
+fastapi_009,VALID_KNOWLEDGE,llama3.1:8b,ollama,EMEMOVERI,API_ERROR,False,API error,infra_failure

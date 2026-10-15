@@ -1,0 +1,59 @@
+{
+  "n_scenarios": 400,
+  "sweep": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "correctness_given_resolved": 0.755,
+      "abstention_precision": NaN
+    },
+    {
+      "threshold": 0.05,
+      "coverage": 0.66,
+      "correctness_given_resolved": 0.8143939393939394,
+      "abstention_precision": 0.03676470588235294
+    },
+    {
+      "threshold": 0.1,
+      "coverage": 0.37,
+      "correctness_given_resolved": 0.8378378378378378,
+      "abstention_precision": 0.01984126984126984
+    },
+    {
+      "threshold": 0.15,
+      "coverage": 0.185,
+      "correctness_given_resolved": 0.918918918918919,
+      "abstention_precision": 0.015337423312883436
+    },
+    {
+      "threshold": 0.2,
+      "coverage": 0.07,
+      "correctness_given_resolved": 1.0,
+      "abstention_precision": 0.013440860215053764
+    },
+    {
+      "threshold": 0.25,
+      "coverage": 0.0325,
+      "correctness_given_resolved": 1.0,
+      "abstention_precision": 0.012919896640826873
+    },
+    {
+      "threshold": 0.3,
+      "coverage": 0.015,
+      "correctness_given_resolved": 1.0,
+      "abstention_precision": 0.012690355329949238
+    },
+    {
+      "threshold": 0.4,
+      "coverage": 0.0,
+      "correctness_given_resolved": NaN,
+      "abstention_precision": 0.0125
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.0,
+      "correctness_given_resolved": NaN,
+      "abstention_precision": 0.0125
+    }
+  ]
+}

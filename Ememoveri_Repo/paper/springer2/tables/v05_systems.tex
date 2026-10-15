@@ -1,0 +1,19 @@
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{2}{c}{Dev-test (3 repos, $n{=}768$)} & \multicolumn{2}{c}{Held-out Python (12)} & \multicolumn{2}{c}{Multi-language (8)} \\
+System (frozen) & Hit@5 & MRR & Hit@5 & MRR & Hit@5 & MRR \\
+\midrule
+Snapshot RAG & 0.641 & 0.497 & 0.603 & 0.469 & 0.640 & 0.502 \\
+\sys{}-D (blueprint) & 0.684 & 0.532 & 0.636 & 0.488 & 0.664 & 0.515 \\
+\sys{}-T (tuned) & 0.751 & 0.585 & 0.693 & 0.531 & 0.728 & 0.571 \\
+\midrule
+Sim+State+Rec+Pop & 0.754 & 0.585 & 0.696 & 0.538 & 0.732 & 0.569 \\
+Co-change + sim & 0.693 & 0.551 & 0.641 & 0.495 & 0.671 & 0.515 \\
+\midrule
+Similar-history (alone) & 0.725 & 0.553 & 0.706 & 0.536 & 0.714 & 0.556 \\
+\sys{}-E (evidence-level) & 0.772 & 0.623 & 0.755 & 0.589 & 0.740 & 0.591 \\
+All channels, linear & 0.772 & 0.624 & 0.761 & 0.592 & 0.747 & 0.595 \\
+Learned ranker, logistic & 0.788 & 0.639 & 0.726 & 0.568 & 0.742 & 0.589 \\
+Learned ranker, GBT & 0.797 & 0.650 & 0.755 & 0.584 & 0.746 & 0.597 \\
+\bottomrule
+\end{tabular}

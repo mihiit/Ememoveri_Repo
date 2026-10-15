@@ -1,0 +1,25 @@
+{
+  "task_id": "fastapi_007",
+  "before_commit": "96f092179fc6991cb7604d1b2143a9704e1abe65",
+  "knowledge_cutoff": "2019-10-03T18:43:15-05:00",
+  "n_claims": 1,
+  "n_leakage_failures": 0,
+  "leakage_failures": [],
+  "claims": [
+    {
+      "claim_id": "b9e1ad3ee609",
+      "statement": "Historical engineering evidence trail for docs/tutorial/first-steps.md",
+      "scope": "fastapi/docs",
+      "state": "PROVISIONAL",
+      "trust": 0.5,
+      "evidence_count": 0,
+      "created_at": "2026-09-22T19:09:25.308760+00:00",
+      "updated_at": "2026-09-22T19:09:25.308760+00:00",
+      "superseded_by": null,
+      "tags": [
+        "docs/tutorial/first-steps.md"
+      ],
+      "evidence": []
+    }
+  ]
+}

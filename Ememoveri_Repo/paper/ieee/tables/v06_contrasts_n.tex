@@ -1,0 +1,16 @@
+\begin{tabular}{l@{\hspace{4pt}}cccrc}
+\toprule
+Contrast (fresh 16) & $\Delta$Hit@5 [95\% CI] & W/L & Holm $p$ & $d_z$ & $\Delta$MRR \\
+\midrule
+H1: \sys{}-2 $-$ Snapshot RAG & 0.132 [0.108, 0.155] & 15/0 & $<$0.001 & 2.68 & 0.133 \\
+H2: \sys{}-2 $-$ original, tuned & 0.041 [0.027, 0.057] & 14/1 & $<$0.001 & 1.26 & 0.057 \\
+H3: \sys{}-2 $-$ without evidence weights & 0.001 [$-$0.005, 0.007] & 9/5 & 0.725 & 0.09 & 0.006 \\
+H4: \sys{}-2 $-$ Sim+State+Rec+Pop & 0.043 [0.027, 0.060] & 13/1 & $<$0.001 & 1.23 & 0.052 \\
+H5a: \sys{}-2 $-$ all channels, linear & 0.004 [0.000, 0.009] & 11/2 & 0.249 & 0.47 & 0.008 \\
+H5b: \sys{}-2 $-$ learned ranker, GBT & 0.009 [$-$0.001, 0.020] & 12/3 & 0.249 & 0.41 & $-$0.001 \\
+\midrule
+\sys{}-2 $-$ similar-history + priors & 0.007 [0.002, 0.013] & 11/4 & -- & 0.61 & 0.013 \\
+\sys{}-2 $-$ blueprint & 0.095 [0.064, 0.130] & 15/0 & -- & 1.36 & 0.091 \\
+\sys{}-2 $-$ learned ranker, logistic & 0.028 [0.018, 0.038] & 14/1 & -- & 1.28 & 0.020 \\
+\bottomrule
+\end{tabular}
